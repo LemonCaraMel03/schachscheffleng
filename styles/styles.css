@@ -1,0 +1,307 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+/* Navigation */
+#nav-bar
+{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+.navbar-brand img
+{
+    height: 100px;
+    padding-left: 30px;
+}
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav li a
+{
+    float: right;
+    text-align: left;
+    color:  #fff!important;
+}
+#nav-bar ul li a:hover
+{
+    color: #4e088f!important;
+    background-color: #fff;
+}
+.navbar
+{
+    background: #4e088f;
+    color: #fff;
+}
+.navbar-toggler
+{
+    border: none!important;
+}
+.nav-link
+{
+    color: #555!important;
+    font-weight: 600;
+    font-size: 16px;
+}
+/* Slider */
+#slider
+{
+    width: 100%;
+}
+/* de_club */
+#de_club
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #4e088f;
+}
+.about-content
+{
+    padding-top: 20px;
+}
+/* spilldeeg_training */
+#spilldeeg_training
+{
+    background-image: linear-gradient(rgb(255,255,255),rgb(255,255,255)), url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #4e088f!important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#spilldeeg_training h1
+{
+    text-align: center;
+    color: #4e088f!important;
+    padding-bottom: 10px;
+}
+#spilldeeg_training h1:after
+{
+    content: '';
+    background: #4e088f;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.spilldeeg_training
+{
+    margin-top: 40px;
+}
+.icon
+{
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.spilldeeg_training p
+{
+    font-style: 14px;
+    margin-top: 20px;
+    color: #4e088f;
+    font-size: larger;
+    font-weight: bolder;
+}
+.spilldeeg_training .col-md-1:hover
+{
+    background:#4e088f;
+    cursor: pointer;
+    transition: 0.7s;
+}
+/*Comite*/
+#Comite
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color:#4e088f;
+}
+#Comite li
+{
+    padding-left: 50px;
+}
+h1{
+    text-align: center;
+    color: #4e088f;
+    padding-bottom: 10px;
+}
+h1::after
+{
+    content: '';
+    background: #fff;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.profile-pic
+{
+    margin-top: 25px;
+}
+.profile-pic-add
+{
+    margin-top: 25px;
+}
+.profile-pic .img-box
+{
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+.profile-pic-add .img-box
+{
+    opacity: 1;
+    display: block;
+    position: relative;
+}
+.profile-pic .img-box img
+{
+    filter: grayscale(1);
+}
+.profile-pic-add .img-box img
+{
+    filter: grayscale(1);
+}
+.profile-pic .img-box img:hover
+{
+    filter: grayscale(0);
+    cursor: pointer;
+}
+.profile-pic-add .img-box img:hover
+{
+    filter: grayscale(0);
+    cursor: pointer;
+}
+.profile-pic h2
+{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #4e088f!important;
+}
+.profile-pic-add h2
+{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #4e088f!important;
+}
+#team .fa
+{
+    height: 25px;
+    width: 25px;
+    color:#4e088f;
+    background: #fff;
+    padding: 40px;
+    border-radius: 50%;
+}
+.img-box ul
+{
+padding: 15px 0;
+position: absolute;
+z-index: 2;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+opacity: 0;
+}
+.img-box ul li
+{
+padding: 5px;
+display: inline-block
+
+}
+.img-box:hover ul
+{
+opacity: 1;
+}
+.img-box ul, .img-box ul li
+{
+transition: 0.5s;
+}
+/*---Weider Information----*/
+/* Weider_Information */
+#Weider_Information
+{
+    background-image: linear-gradient(rgb(255,255,255),rgb(255,255,255)), url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #4e088f!important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#Weider_Information h1
+{
+    text-align: center;
+    color: #4e088f!important;
+    padding-bottom: 10px;
+}
+.subscribe-btn a
+{
+    color: #fff!important;
+}
+#Weider_Information h1:after
+{
+    content: '';
+    background: #fff;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.Weider_Information
+{
+    margin-top: 40px;
+}
+
+.icon
+{
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    border: 3px solid #4e088f;
+    border-radius: 50%;
+}
+.Weider_Information p
+{
+    font-style: 14px;
+    margin-top: 20px;
+    color: #4e088f;
+    font-size: larger;
+    font-weight: bolder;
+}
+.Weider_Information .col-md-1:hover
+{
+    background: #4e088f;
+    cursor: pointer;
+    transition: 0.7s;
+}
+/*Contact*/
+.form-control
+{
+    color: #4e088f!important;
+}
+.follow
+{
+    color: #4e088f;
+}
+/*Footer*/
+#footer
+{
+    background: #4e088f;
+    color: #fff;
+    padding: 12px;
+
+}
+
+

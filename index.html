@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Schachclub Scheffleng</title>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link rel="stylesheet" href="styles/index.css">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i%7CRajdhani:400,600,700">
+
+    <!--<link rel="stylesheet" href="styles/aos/aos.css">
+    <link rel="stylesheet" href="styles/swiper/swiper.css">
+    <link rel="stylesheet" href="styles/lightgallery.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body onload="toggle_info_modal()">
+
+    <!-- Top Bar -->
+    <div class="bg-0">
+        
+
+        <!-- Languages -->
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><img src="images/languages/lu.png" width="20" height="10" alt=""></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="FR/index.html"><img src="images/languages/fr.png" width="20" height="10" alt=""></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><img src="images/languages/de.png" width="20" height="10" alt=""></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><img src="images/languages/en.png" width="20" height="10" alt=""></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><img src="images/languages/pt.png" width="20" height="10" alt=""></a>
+            </li>
+        </ul>
+        
+        <!-- Navigation -->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/Clublogo.png" alt="logo" style="width: 60px; height: 85px;">
+                    </a>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#">Pricing</a>
+                        </div>
+                    </div>
+    
+                </div>
+            </nav>
+    
+        </div>
+    </div>
+
+    
+
+    
+    
+
+    <!--<header class="w-100">
+        <div class="container">
+
+            <div class="top-header d-none d-sm-flex justify-content-between align-items-center">
+
+                <div class="contact">
+                    
+                    <a href="tel:+352 661 590 803" class="tel"><i class="fa fa-phone" aria-hidden="true"></i>+352 661 590 803</a>
+                    <a href="mailto:contact@schachscheffleng.com"><i class="fa fa-envelope"
+                            aria-hidden="true"></i>contact@schachscheffleng.com</a>
+                </div>
+
+                <nav class="d-flex aic">
+
+                    <ul class="nav social d-none d-md-flex">
+                        <li><a href="https://www.facebook.com/SchachclubScheffleng" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    </ul>
+
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                          <a class="nav-link" href="Index.html"><img src="images/lu.png" width="20" height="10" alt=""></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="FR/Index.html"><img src="images/fr.png" width="20" height="10" alt=""></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="Index.html"><img src="images/de.png" width="20" height="10" alt=""></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="Index.html"><img src="images/en.png" width="20" height="10" alt=""></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="Index.html"><img src="images/pt.png" width="20" height="10" alt=""></a>
+                        </li>
+                    </ul>
+
+                </nav>
+                
+            </div>
+          
+            <div class="news-container">
+
+                <div class="title">
+                    LAST SATURDAY OPEN!
+                </div>
+
+                <ul>
+                    <li>
+                        20/05/2023 - 01/07/2023
+                    </li>
+                    
+                    <li>
+                        20/05/2023 - 01/07/2023
+                    </li>
+
+                    <li>
+                        20/05/2023 - 01/07/2023
+                    </li>
+                </ul>
+
+            </div>
+            
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="Index.html"><img src="images/logo.png" alt="logo"></a>
+                <div class="group d-flex align-items-center">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"><span
+                            class="navbar-toggler-icon"></span></button>
+                    <a class="login-icon d-sm-none" href="#"><i class="fa fa-user"></i></a>
+                </div>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home.html">De Club</a></li>
+                        <li class="nav-item"><a class="nav-link" href="homeSchoul.html">Schachschoul</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#featured">Spilldeeg/Training</a></li>
+                        
+                        <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+                        <li class="nav-item"><a class="nav-link" href="img\Dateschutz.pdf">Dateschutz</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>-->
+
+    <!-- Content Start -->
+  
+        <!-- Spilldeeg Start -->
+        <section id="featured">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
+                        <div class="title">
+                            <br>
+                            
+                            <h6 class="title-primary">Spillowend</h6>
+                            <h1 class="title-blue">Spilldeeg / Training</h1>
+                        </div>
+                        <p>D'Trainingsowender sinn op fir all Leit, ob Member oder nett Member.</p>
+                        <div class="media-element d-flex justify-content-between">
+                            <div class="media">
+                                <i class="fa fa-magic mr-4"></i>
+                                <div class="media-body">
+                                    <h5>De Club</h5>
+                                    Freides vun 19:00
+                                </div>
+                            </div>
+                            <div class="media">
+                                <i class="fa fa-magic mr-4"></i>
+                                <div class="media-body">
+                                    <h5>Schachschoul</h5>
+                                    Denschdes vun 14:30 - 17:15 <br>
+                                    Donneschdes vun 14:30 - 17:15 <br>
+                                    Samschdes vun 14:30 - 17:30<br>
+                                    <br>
+                                    <br>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Spilldeeg End -->
+
+
+    <!-- Inscription Start -->
+    <section class="cta" data-aos="fade-up" data-aos-delay="0">
+        <div class="container">
+            <div class="cta-content d-xl-flex align-items-center justify-content-around text-center text-xl-left">
+                <div class="content" data-aos="fade-right" data-aos-delay="200">
+                    <h2>Aschreiwung</h2>
+                    
+                </div>
+                <div class="subscribe-btn" data-aos="fade-left" data-aos-delay="400" data-aos-offset="0">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdA7KcawowJ5r7GSh06z-cPOEGfE68BK4rqKMzzInMzxxmKcw/viewform?usp=sf_link" target class="btn btn-primary">Last Saturday</a>
+                </div>
+                <div class="subscribe-btn" data-aos="fade-left" data-aos-delay="400" data-aos-offset="0">
+                    <a href="InterclubChampionship.html" class="btn btn-primary">InterClub Championnat</a>
+                </div>
+                <div class="subscribe-btn" data-aos="fade-left" data-aos-delay="400" data-aos-offset="0">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScW_xCcLKvp9sCzi_scx_7SrKnCOGVlqUBUgPsC3IEn1_QpnA/viewform?usp=sf_link" class="btn btn-primary">Club Championnat</a>
+                </div>
+                
+                
+
+            </div>
+            <br>
+            <br>
+        </div>
+        
+    </section>
+    
+    <br>
+    <br>
+    
+        <section class="cta" data-aos="fade-up" data-aos-delay="0">
+            
+        <div class="container">
+             <i class="fa fa-magic mr-4"></i>
+                                <div class="media-body">
+                                    <h5>Info</h5>
+                                   
+                                   <a href="img/Planning Avril 2023.pdf" target class="btn btn-primary">Planning 2023</a>
+                                    <br>
+                                    <br>
+                                     <a href="https://drive.google.com/drive/folders/1Y4wk9_mOIvdprPBCPTbHZs9iH0WBTFdq?usp=sharing" target class="btn btn-primary">Spill Kalenner 2022</a>
+                                    
+                                    <!-- <a href="img/Planning.pdf" target class="btn btn-primary">Spill Kalenner 2022</a>  -->
+                                    <br>
+                                    <br>
+                                    <a href="result.html" class="btn btn-primary ">Championnat de LUX Jeunes 2022
+                                        </a>
+                                    <br>
+                                    <br>
+                                    <a href="https://www.flde.lu/resultats/championnat-interclubs/saison-actuelle/" class="btn btn-primary">Resultater & Tabell Interclub Championat</a> 
+                                    <br>
+                                    
+                                    <br>
+                                    <a href="img/CHAMPIONNAT DES JEUNES PAR EQUIPES 2021-2022 Nov-2021.pdf" class="btn btn-primary">Youth Team Championship 2022-23 </a>
+                                    <br>
+                                    <br>
+                                    <a href="https://drive.google.com/drive/folders/1GbjItG6D6Hs0sOw6vBSm51HgxtY6pDPK?usp=sharing" class="btn btn-primary">RESULTATER (Last Saturday, Championnats an aner Turnéier)</a>
+                                    <br>
+                                    <br>
+                                    <a href="https://drive.google.com/drive/folders/1TRpVqiQP_DeGulP3d17v8M1R1ufrWxIf?usp=sharing" class="btn btn-primary">ARCHIVE RESULTATER </a>
+                                    <br>
+                                    <br>                                    
+                                    <a href="https://www.facebook.com/media/set/?set=a.104547195157915&type=3" class="btn btn-primary">Fotoen</a>
+                                    <br>
+                                    <br>
+                                    <a href="https://drive.google.com/drive/folders/1gnZ3elK99U322n6jnsr0b7EqEIhZyx0D?usp=share_link" class="btn btn-primary">Archive Fotoen</a>
+                                    <br>
+                                    <br>
+                                    <a href="https://www.youtube.com/watch?v=PjMp9XyjdDo&t=192s&ab_channel=uelzechtkanal" class="btn btn-primary">Videoen</a>
+                                    <br>
+                                    <br>
+                                    
+                                </div>
+                    
+                        
+                        
+                    
+            <br>
+            <br>
+        </div>
+        
+        
+                            
+    </section>
+    <!-- Inscription End -->
+    
+
+  <!-- Sponser Start -->
+
+         <section id="featured">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
+                        <div class="title">
+                            <br>
+                           <!--<h6 class="title-primary">Sponsors</h6>-->
+                            <h1 class="title-blue">Sponsor</h1>
+                            
+                             <a class="title-blue" href="https://www.pezzotta.lu/"><img src="img/PezottaLogo.png" width="202" height="125" style="border:2px solid #4e088f"></a>
+                            
+                            
+                             <a class="title-blue" href="img/KEBAB Snack Moris Home Page.pdf"><img src="img/Sponsor 2.png" width="202" height="125" style="border:2px solid #4e088f"></a>
+                             
+                            <ul class="title-blue">
+                       
+    
+                        </ul>
+                    
+                       
+                </div>
+                
+            </div>
+        </section>
+        <!-- Sponser End -->
+ <br>
+  <br>
+   <br>
+   
+ <!-- Contact Start-->
+ <contact>
+ <section id="contact">
+    <div class="container">
+        <h1>Kontakt</h1>
+        <div class="row ">
+            <div class="col-md-6" contact-info>
+                <div class="follow"><b>KESSLER Armand :</b> armandk1@pt.lu
+                </div>
+                <div class="follow"><b>Handy : +352 661 590 803 </b> 
+                </div>
+                <div class="follow"><b>E-mail Official:</b> contact@schachscheffleng.lu
+                </div>
+                <div class="follow"><b>Address:</b> <i class="fa fa-map-marker"></i></i>1, rue de Moulin, L-3857, Schëffleng
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+</section>
+</contact>
+
+<!-- Footer -->
+<footer>
+    <section id="footer">
+        <div class="container text-center">
+            <p> Copyright © Tuerm a Sprénger Matt Schëffleng</p>
+        </div>
+    </section>
+</footer>
+
+
+<div id="info_modal" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <img src="img/Poster 2.jpg" alt="info" class="img-fluid">
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="js/index.js"></script>
+
+<!--<script src="js/bootstrap.bundle.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/lightgallery-all.min.js"></script>-->
+
+<script src="js/main.js"></script>
+
+
+</body>
+
+</html>
