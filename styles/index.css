@@ -1,3 +1,61 @@
-.bg-0 {
+.bg-main {
     background-color: #4e088f;
+}
+.bg-extra {
+    background-color: #4e088f29;
+}
+
+.navbar-nav .nav-link {
+    margin: 0 1rem;
+}
+
+.active {
+    font-weight: bold;
+}
+
+h1 {
+    color: #4e088f;
+}
+
+.carousel-inner {
+    height: 320px;
+}
+@media (min-width: 1200px) {
+    .carousel-inner {
+        height: 50vh;
+    }
+}
+
+
+/* Buttons */
+.btn {
+    border-radius: 0 1rem;
+    padding: 0.75rem 1rem;
+}
+
+.btn-primary {
+    background-color: #4e088f;
+    border-color: #4e088f; 
+}
+.btn-primary:hover {
+    background-color: #3c086d;
+    border-color: #3c086d;
+}
+.btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem #4e088f29;
+}
+.btn.btn-primary:not(:disabled):not(.disabled):active,
+.btn.btn-primary:not(:disabled):not(.disabled).active {
+    background-color: #3c086d;
+    border-color: #3c086d;
+}
+.btn.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn.btn-primary:not(:disabled):not(.disabled).active:focus {
+    box-shadow: 0 0 0 0.2rem #4e088f29;
+}
+
+.btn-outline-light {
+    border-radius: 0.25rem;
+    color: rgba(255,255,255,.55);
+    border-color: rgba(255,255,255,.1);
 }
