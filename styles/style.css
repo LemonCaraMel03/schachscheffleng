@@ -26,6 +26,12 @@
     }
 }
 
+@media (max-width: 576px) {
+    #header-title {
+        font-size: 3rem;
+    }
+}
+
 #header {
     min-height: 400px;
 }
@@ -35,6 +41,32 @@
     font-weight: bold;
 }
 
+
+
+/* Calendar */
+.fc * {
+    text-decoration: none;
+    color: black;
+}
+
+.fc-button-primary {
+    background-color: #4e088fa9 !important;
+}
+
+.fc-day-today {
+    background-color: #4e088f29 !important;
+}
+
+.fc-daygrid-event-dot {
+    border-color: #dc3545;
+}
+
+.fc-view {
+    background-color: #eeeeee76;
+}
+.fc-day-other {
+    background-color: #0000000d;
+}
 
 
 /* Images and Icons */
