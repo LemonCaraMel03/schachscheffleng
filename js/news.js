@@ -1,10 +1,19 @@
 var newsTitle= "Last Saturday Open!";
 
+
 const news = [
     "20/05/2023 - 01/07/2023",
     "20/05/2023 - 01/07/2023",
     "20/05/2023 - 01/07/2023"
 ];
+
+
+
+
+
+
+
+/*-----------------------------------*/
 
 function update_news_bar() {
     if (newsTitle != "" && news.length != 0) {

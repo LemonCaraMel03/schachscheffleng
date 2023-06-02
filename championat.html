@@ -27,17 +27,12 @@
 </head>
 
 
-<body onload="update_news_bar()">
+<body onload="update_unmeldung(), update_news_bar()">
 
     <!-- News Bar -->
     <div  id="news-bar" class="news-container">
-
-        <div id="news-title" class="title">
-        </div>
-
-        <ul id="news">
-        </ul>
-
+        <div id="news-title" class="title"></div>
+        <ul id="news"></ul>
     </div>
     
     <!-- Top Bar -->
@@ -46,9 +41,10 @@
         <div id="top-bar" class="container-lg">
 
             <!-- Languages -->
-            <div class="d-none d-lg-flex">
-                <a class="navbar-brand me-auto" href="#">
-                    <img src="img/Clublogo.png" alt="logo" style="width: 60px; height: 85px;">
+            <div class="d-none d-lg-flex justify-content-between">
+                <a class="nav-link mt-2 d-flex" href="#">
+                    <img src="img/Clublogo_icon_big.png" alt="logo" style="width: 65px; height: 75px;" class="me-2">
+                    <h2 class="align-self-center mb-0" style="color: white;">Schachclub Schëffleng</h2>
                 </a>
 
                 <ul class="nav">
@@ -76,7 +72,7 @@
                 <div class="container-fluid">
 
                     <a class="navbar-brand me-auto d-lg-none" href="#">
-                        <img src="img/Clublogo.png" alt="logo" style="width: 60px; height: 85px;">
+                        <img src="img/Clublogo_icon_big.png" alt="logo" style="width: 65px; height: 75px;">
                     </a>
 
                     <!-- Languages Mobile -->
@@ -111,19 +107,16 @@
                             <a class="nav-link" href="club.html">De Club</a>
                             <a class="nav-link active" aria-current="page" href="championat.html">Championat</a>
                             <a class="nav-link" href="calendar.html">Spillkalenner</a>
+                            <a class="nav-link" href="lastsaturday.html">Last Saturday</a>
                             
                             <div class="dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Unmeldung
                                 </a>
 
-                                <ul class="dropdown-menu" aria-labelledby="navbarUnmeldungDropdown">
-                                  <li><a class="dropdown-item" href="#">Last Saturday</a></li>
-                                  <li><a class="dropdown-item" href="#">InterClub Championat</a></li>
-                                  <li><a class="dropdown-item" href="#">Club Championat</a></li>
-                                </ul>
+                                <ul id="unmeldung" class="dropdown-menu" aria-labelledby="navbarUnmeldungDropdown"></ul>
                             </div>
-
+                            
                             <a class="nav-link ms-lg-auto" href="schachschoul.html" id="schachschoul">
                                 <i class="fa-solid fa-chess fa-lg"></i>
                                 Schachschoul
@@ -140,6 +133,8 @@
 
     <!-- Content -->
     <div class="container py-5">
+        <a class="btn btn-primary" href="https://drive.google.com/drive/folders/1TRpVqiQP_DeGulP3d17v8M1R1ufrWxIf?usp=sharing">ARCHIVE RESULTATER </a>
+
         <h1>Interclub Championship 2022-2023</h1>
                     
         <h3>Information General</h3>              
@@ -213,35 +208,54 @@
 
                 <div class="col-lg-8 ">
                     
-                    <!-- Kontakt -->
-                    <div class="d-flex flex-column">
-                        <h3>Kontakt</h3>
+                    <div class="row justify-content-between">
 
-                        <a href="mailto:armandk1@pt.lu">
-                            <i class="fa-solid fa-user-tie"></i>
-                            <b>KESSLER Armand :</b> armandk1@pt.lu
-                        </a> 
+                        <div class="col-sm-6">
+                            <!-- Kontakt -->
+                            <div class="d-flex flex-column">
+                                <h3>Kontakt</h3>
 
-                        <a href="tel:+352 661 590 803" class="tel">
-                            <i class="fa-solid fa-phone"></i>
-                            +352 661 590 803
-                        </a>
-                        
-                        <a href="mailto:contact@schachscheffleng.com">
-                            <i class="fa-solid fa-envelope"></i>
-                            contact@schachscheffleng.com
-                        </a>
+                                <a href="mailto:armandk1@pt.lu">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                    <b>KESSLER Armand :</b> armandk1@pt.lu
+                                </a> 
 
-                        <div class="d-inline mt-2">
-                            <a class="btn btn-social" href="https://www.facebook.com/SchachclubScheffleng" target="_blank">
-                                <i class="fa-brands fa-facebook-f m-0"></i>
-                            </a>
+                                <a href="tel:+352 661 590 803" class="tel">
+                                    <i class="fa-solid fa-phone"></i>
+                                    +352 661 590 803
+                                </a>
+                                
+                                <a href="mailto:contact@schachscheffleng.com">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    contact@schachscheffleng.com
+                                </a>
 
-                            <a class="btn btn-social" href="" target="_blank">
-                                <i class="fa-brands fa-instagram fa-lg"></i>
-                            </a>
+                                <a href="files/unmeldung.pdf" target="_blank">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    Schachclub Unmeldung
+                                </a>
+
+                                <div class="d-inline mt-2">
+                                    <a class="btn btn-social" href="https://www.facebook.com/SchachclubScheffleng" target="_blank">
+                                        <i class="fa-brands fa-facebook-f m-0"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
+
+                        <hr class="my-3 d-sm-none">
+
+                        <div class="col-sm-3">
+                            <!-- Don -->
+                            <div class="d-flex flex-column">
+                                <h3>Don</h3>
+
+                                <img src="img/stock/c2.png" style="height: 150px; width: 150px;"/>
+                            </div>
+                        </div>
+
                     </div>
+                    
 
                     <hr class="my-3">
 
@@ -251,10 +265,10 @@
 
                         <div class="d-inline">
                             <a href="https://www.pezzotta.lu/">
-                                <img src="img/sponsors/PezottaLogo.png" width="180" height="105" style="border:2px solid #4e088f">
+                                <img src="img/sponsors/PezottaLogo.png" width="210" height="120" style="border:2px solid #4e088f">
                             </a>
                             <a href="files/sponsors/KEBAB Snack Moris Home Page.pdf">
-                                <img src="img/sponsors/KebabSnackMorisLogo.png" width="180" height="105" style="border:2px solid #4e088f">
+                                <img src="img/sponsors/KebabSnackMorisLogo.png" width="210" height="120" style="border:2px solid #4e088f">
                             </a>
                         </div>
                         
@@ -264,16 +278,16 @@
 
                 <hr class="my-3 d-lg-none">
 
-                <!-- Address -->
+                <!-- Áddress -->
                 <div class="col-lg-4 d-flex flex-column">
-                    <h3>Address</h3>
+                    <h3>Adress</h3>
     
                     <p>
                         <i class="fa-solid fa-location-dot"></i>
-                        1, rue de Moulin, L-3857, Schëffleng
+                        1 Rue du Moulin, L-3857, Schëffleng
                     </p>
 
-                    <div style="overflow:hidden;max-width:100%;width:400px;height:300px;">
+                    <div style="overflow:hidden;max-width:100%;width:400px;height:320px;">
                         <div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;">
                             <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=1,+rue+de+Moulin,+L-3857,+Schëffleng&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
                         </div>
@@ -293,6 +307,7 @@
 
     <!-- Internal Scripts -->
     <script src="js/news.js"></script>
+    <script src="js/unmeldung.js"></script>
 
 </body>
 
