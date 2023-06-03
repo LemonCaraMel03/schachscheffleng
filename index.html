@@ -30,8 +30,10 @@
 <body onload="update_unmeldung(), update_news_bar(), toggle_info_modal()">
 
     <!-- News Bar -->
-    <div  id="news-bar" class="news-container">
-        <div id="news-title" class="title"></div>
+    <div  id="news-bar" style="display: none;">
+        <div id="news-title-box">
+            <a id="news-title" class="btn btn-danger" href="#"></a>
+        </div>
         <ul id="news"></ul>
     </div>
     
@@ -171,11 +173,11 @@
 
             <div class="ms-lg-5 me-lg-3">
                 <div class="d-flex">
-                    <h1 id="header-title" class="h-main align-self-end">Tuerm a Sprénger <br> Matt Schëffleng </h1>
+                    <h1 id="header-title" class="highlight align-self-end">Tuerm a Sprénger <br> Matt Schëffleng </h1>
                 </div>
                 
 
-                <p>
+                <p class="fw-bold">
                     Mir sinn do, fir jidderengem, dee wëll, d'Schachspill bäizebréngen.
                     Et kann och jiddereen un engem vun eisen Spillowenter deelhuelen, ob lizenzéiert oder net.
                     Zéckt also net, a kommt eis an der Millen besichen!
@@ -201,7 +203,7 @@
             </h6>
             <h1>Spilldeeg / Training</h1>
 
-            <p>D'Trainingsowender sinn op fir all Leit, ob Member oder nett Member.</p>
+            <p class="fw-bold">D'Trainingsowender sinn op fir all Leit, ob Member oder nett Member.</p>
 
             <div class="row g-4">
 
@@ -210,7 +212,7 @@
                         <h3>Schachschoul</h3>
 
                         <ul>
-                            <li><b>Denschdes</b> vun <b>14:30 - 17:15</b></li>
+                            <li><b>Dënschdes</b> vun <b>14:30 - 17:15</b></li>
                             <li><b>Donneschdes</b> vun <b>14:30 - 17:15</b></li>
                             <li><b>Samschdes</b> vun <b>14:30 - 17:30</b></li>
                         </ul>
@@ -231,8 +233,7 @@
         </div>
 
 
-        <!-- Info -->
-
+        <!-- Multimedia -->
         <div class="d-flex flex-column mt-5">
             <h1>Multimedia</h1>
 

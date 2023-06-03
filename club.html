@@ -30,8 +30,10 @@
 <body onload="update_unmeldung(), update_news_bar()">
 
     <!-- News Bar -->
-    <div  id="news-bar" class="news-container">
-        <div id="news-title" class="title"></div>
+    <div  id="news-bar" style="display: none;">
+        <div id="news-title-box">
+            <a id="news-title" class="btn btn-danger" href="#"></a>
+        </div>
         <ul id="news"></ul>
     </div>
     
@@ -135,72 +137,212 @@
     <div class="container py-5">
 
         <!-- Club Info -->
-        <div class="row">
-            <div class="col-md-6">
-                <h6>Schachclub Schëffleng</h6>
-                <h1>Turm a Sprénger Matt Schëffleng</h1>
-                Eis Trainingen sinn op fir jiddereen, vu 5 bis 99 Joer an eeler, d'Virdeeler vum Schach ginn duerch vill Studien bewisen. 
-                Eng Verbesserung vu kognitiven Fäegkeeten, sou wéi Opmierksamkeet, Erënnerung a logescht Denken, Qualitéiten, déi wesentlech fir d'Entwécklung vun engem Individuum sinn. 
-                Méi Kreativitéit, verbessert duerch Probleemléisung.
-            </div>
+        <div>
+            <h6>Schachclub Schëffleng</h6>
+            <h1>Turm a Sprénger Matt Schëffleng</h1>
 
-            <div class="col-md-6">
-                Kritescht Denken stäerkt d'Fäegkeet fir an enger bestëmmter Situatioun d'Stäerkten a Schwächen vun all Säit z'ënnerscheeden a Wäertuerteeler an Entscheedungen ze treffen. 
-                En ethesche Sënn.  Et gëtt dacks eng Verbesserung vum Gesamtverhalen vu jonke Spiller.
-                Besser Resultater an der Sproochkompetenz. 
-            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <p class="fw-bold">
+                        Eis Trainingen sinn op fir jiddereen, vu 5 bis 99 Joer an eeler, d'Virdeeler vum Schach ginn duerch vill Studien bewisen. 
+                        Eng Verbesserung vu kognitiven Fäegkeeten, sou wéi Opmierksamkeet, Erënnerung a logescht Denken, Qualitéiten, déi wesentlech fir d'Entwécklung vun engem Individuum sinn. 
+                        Méi Kreativitéit, verbessert duerch Probleemléisung.
+                    </p>
+                </div>
+
+                <div class="col-lg-6">
+                    <p class="fw-bold">
+                        Kritescht Denken stäerkt d'Fäegkeet fir an enger bestëmmter Situatioun d'Stäerkten a Schwächen vun all Säit z'ënnerscheeden a Wäertuerteeler an Entscheedungen ze treffen. 
+                        En ethesche Sënn.  Et gëtt dacks eng Verbesserung vum Gesamtverhalen vu jonke Spiller.
+                        Besser Resultater an der Sproochkompetenz. 
+                    </p>
+                </div>
+
+             </div>
         </div>
 
         <!-- Spilldeeg/ Training -->
-        <h2>Spilldeeg/Training</h2>
-        <p>Spillowend Freides vun 19:00</p>  
+        <div class="highlight-box mt-5">
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <h6>
+                        <i class="fa-solid fa-calendar-days"></i> 
+                        Spillowend
+                    </h6>
+                    <h1>Spilldeeg / Training</h1>
+        
+                    <p class="fw-bold">D'Trainingsowender sinn op fir all Leit, ob Member oder nett Member.</p>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="white-highlight-box">
+                        <h3>De Club</h3>
+                        
+                        <ul>
+                            <li><b>Freides</b> vun <b>19:00</b></li>
+                        </ul>
+                    </div>
+                </div>
+
+             </div>
+        </div>
 
 
         <!-- Comité -->
-        <h2>Comité</h2>
-        <div class="row">
-            <div class="col-sm-6 col-lg-3 text-center mb-2">
-                <div>
-                    <img class="rounded-circle person-pic" src="img/stock/c2.png">
-                </div>
-                
-                <h5>President : Armand Kessler</h5>
-            </div>   
+        <div class="mt-5">
+            <h1>Comité :</h1>
+            <div class="row g-3 justify-content-center">
+                <div class="col-sm-6 col-lg-4 col-xl-3 text-center my-4">
+                    <div>
+                        <img class="rounded-circle person-pic" src="img/stock/c2.png">
+                    </div>
+                    
+                    <h5 class="highlight mb-0">Président</h5>
+                    <h3 class="mb-0">Armand Kessler</h3>
+                    <a class="contact fw-bold" href="mailto:armandk1@pt.lu">
+                        <i class="fa-solid fa-envelope"></i>
+                        armandk1@pt.lu
+                    </a>
+                </div>   
 
-            <div class="col-sm-6 col-lg-3 text-center mb-2">
-                <div>
-                    <img class="rounded-circle person-pic" src="img/stock/c2.png">
+                <div class="col-sm-6 col-lg-4 col-xl-3 text-center my-4">
+                    <div>
+                        <img class="rounded-circle person-pic" src="img/stock/c2.png">
+                    </div>
+            
+                    <h5 class="highlight mb-0">Secrétaire Général</h5>
+                    <h3 class="mb-0">Christian Klein</h3>
+                    <a class="contact fw-bold" href="mailto:christian@klein.lu">
+                        <i class="fa-solid fa-envelope"></i>
+                        christian@klein.lu
+                    </a>
                 </div>
-                
-                <h5>Secretaire : Christian Klein</h5>
-            </div>
 
-            <div class="col-sm-6 col-lg-3 text-center mb-2">
-                <div>
-                    <img class="rounded-circle person-pic" src="img/stock/c2.png">
-                </div>
-                
-                <h5>Keesier : Raoul Zerbato</h5>
-            </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 text-center my-4">
+                    <div>
+                        <img class="rounded-circle person-pic" src="img/stock/c2.png">
+                    </div>
 
-            <div class="col-sm-6 col-lg-3 text-center mb-2">
-                <div>
-                    <img class="rounded-circle person-pic" src="img/stock/c2.png">
+                    <h5 class="highlight mb-0">Secrétaire Adjoint</h5>
+                    <h3 class="mb-0">Francis Maquil</h3>
+                    <a class="contact fw-bold" href="mailto:fmaquil@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        fmaquil@gmail.com
+                    </a>
                 </div>
-                
-                <h5>Techneschen Direkter : Jean-Claude Schuller</h5>
+
+                <div class="col-sm-6 col-lg-5 col-xl-3 text-center my-4">
+                    <div>
+                        <img class="rounded-circle person-pic" src="img/stock/c2.png">
+                    </div>
+                    
+                    <h5 class="highlight mb-0">Trésorier Général</h5>
+                    <h3 class="mb-0">Gilbert Geschwindt</h3>
+                    <a class="contact fw-bold" href="mailto:gilbert.geschwindt@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        gilbert.geschwindt@gmail.com
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-lg-5 col-xl-3 text-center my-4">
+                    <div>
+                        <img class="rounded-circle person-pic" src="img/stock/c2.png">
+                    </div>
+                    
+                    <h5 class="highlight mb-0">Responsable Jeunes</h5>
+                    <h3 class="mb-0">Robert Ludewig</h3>
+                    <a class="contact fw-bold" href="mailto:robertlu@pt.lu">
+                        <i class="fa-solid fa-envelope"></i>
+                        robertlu@pt.lu
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-lg-5 col-xl-3 text-center my-4">
+                    <div>
+                        <img class="rounded-circle person-pic" src="img/stock/c2.png">
+                    </div>
+
+                    <h5 class="highlight mb-0">Directeur Technique</h5>
+                    <h3 class="mb-0">Jean-Claude Schuller</h3>
+                    <a class="contact fw-bold" href="mailto:jcs.tsm@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        jcs.tsm@gmail.com
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-lg-5 col-xl-3 text-center my-4">
+                    <div>
+                        <img class="rounded-circle person-pic" src="img/stock/c2.png">
+                    </div>
+
+                    <h5 class="highlight mb-0">Responsable Catering</h5>
+                    <h3 class="mb-0">Marianne Kessler</h3>
+                    <a class="contact fw-bold" href="mailto:armandk1@pt.lu">
+                        <i class="fa-solid fa-envelope"></i>
+                        armandk1@pt.lu
+                    </a>
+                </div>
             </div>
         </div>
+        
 
-        <h2>Aaner Memberen :</h2>
-        <ul>
-            <li><b>Marianne Kessler</b></li>
-            <li><b>Jean-Claude Schuller</b></li>
-            <li><b>Roby Ludewig</b></li>
-            <li><b>Myriam Pleim</b></li>
-            <li><b>Jean-Marie Schockmel</b></li>
-            <li><b>Gérard Thill</b></li> 
-        </ul> 
+        <!-- Aaner Memberen -->
+        <div class="mt5">
+            <h1>Aaner Memberen :</h1> 
+            <div class="row g-3 justify-content-center">
+
+                <div class="col-sm-6 col-xl-3 text-center my-4">
+                    <div>
+                        <img class="rounded-circle person-pic" src="img/comite/thill_gerard.jpg">
+                    </div>
+                    
+                    <h3 class="mb-0">Gérard Thill</h3>
+                    <a class="contact fw-bold" href="mailto:thillger@pt.lu">
+                        <i class="fa-solid fa-envelope"></i>
+                        thillger@pt.lu
+                    </a>
+                </div>   
+
+                <div class="col-sm-6 col-xl-3 text-center my-4">
+                    <div>
+                        <img class="rounded-circle person-pic" src="img/stock/c2.png">
+                    </div>
+                    
+                    <h3 class="mb-0">Jean-Marie Schockmel</h3>
+                    <a class="contact fw-bold" href="mailto:schockj@pt.lu">
+                        <i class="fa-solid fa-envelope"></i>
+                        schockj@pt.lu
+                    </a>
+                </div> 
+
+                <div class="col-sm-6 col-xl-3 text-center my-4">
+                    <div>
+                        <img class="rounded-circle person-pic" src="img/stock/c2.png">
+                    </div>
+                    
+                    <h3 class="mb-0">Myriam Pleim</h3>
+                    <a class="contact fw-bold" href="mailto:myriampleim@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        myriampleim@gmail.com
+                    </a>
+                </div> 
+
+                <div class="col-sm-6 col-xl-3 text-center my-4">
+                    <div>
+                        <img class="rounded-circle person-pic" src="img/stock/c2.png">
+                    </div>
+                    
+                    <h3 class="mb-0">Raoul Zerbato</h3>
+                    <a class="contact fw-bold" href="mailto:zera@me.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        zera@me.com
+                    </a>
+                </div> 
+            </div>
+        </div>
+        
+
 
         <!-- Other Information -->
         <h2>Wéider Informatiounen</h2>

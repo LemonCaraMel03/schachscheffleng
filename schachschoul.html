@@ -30,8 +30,10 @@
 <body onload="update_unmeldung(), update_news_bar()">
 
     <!-- News Bar -->
-    <div  id="news-bar" class="news-container">
-        <div id="news-title" class="title"></div>
+    <div  id="news-bar" style="display: none;">
+        <div id="news-title-box">
+            <a id="news-title" class="btn btn-danger" href="#"></a>
+        </div>
         <ul id="news"></ul>
     </div>
     
@@ -135,117 +137,266 @@
     <div class="container py-5">
 
         <!-- Schachschoul Info -->
-        <div class="row">
-            <div class="col-md-6">
-                <h6>Schachclub Schëffleng</h6>
-                <h1>Schachschoul</h1>
-                Eis Trainingen sinn op fir jiddereen, vu 5 bis 99 Joer an eeler, d'Virdeeler vum Schach ginn duerch vill Studien bewisen.
-                Eng Verbesserung vu kognitiven Fäegkeeten, sou wéi Opmierksamkeet, Erënnerung a logescht Denken, Qualitéiten, déi wesentlech fir d'Entwécklung vun engem Individuum sinn.
-                Méi Kreativitéit, verbessert duerch Probleemléisung.
-            </div>
+        <div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <h6>Schachclub Schëffleng</h6>
+                    <h1>Schachschoul</h1>
 
-            <div class="col-md-6">
-                Kritescht Denken stäerkt d'Fäegkeet fir an enger bestëmmter Situatioun d'Stäerkten a Schwächen vun all Säit z'ënnerscheeden a Wäertuerteeler an Entscheedungen ze treffen.
-                En ethesche Sënn. Et gëtt dacks eng Verbesserung vum Gesamtverhalen vu jonke Spiller.
-                Besser Resultater an der Sproochkompetenz.
-            </div>
+                    <p class="fw-bold">
+                        Eis Trainingen sinn op fir jiddereen, vu 5 bis 99 Joer an eeler, d'Virdeeler vum Schach ginn duerch vill Studien bewisen. 
+                        Eng Verbesserung vu kognitiven Fäegkeeten, sou wéi Opmierksamkeet, Erënnerung a logescht Denken, Qualitéiten, déi wesentlech fir d'Entwécklung vun engem Individuum sinn. 
+                        Méi Kreativitéit, verbessert duerch Probleemléisung.
+                        Kritescht Denken stäerkt d'Fäegkeet fir an enger bestëmmter Situatioun d'Stäerkten a Schwächen vun all Säit z'ënnerscheeden a Wäertuerteeler an Entscheedungen ze treffen. 
+                        En ethesche Sënn.  Et gëtt dacks eng Verbesserung vum Gesamtverhalen vu jonke Spiller.
+                        Besser Resultater an der Sproochkompetenz. 
+                    </p>
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="img/gallery/s3.jpg" width="100%"/>
+                </div>
+
+             </div>
         </div>
 
         <!-- Spilldeeg/ Training -->
-        <h2>Spilldeeg/Training</h2>
-        <p>Densches vun 14:30 - 17:15</p> 
-        <p>Donneschdes vun 14:30 - 17:15</p>
-        <p>Samschdes vun 14:30 - 17:30</p>  
+        <div class="highlight-box mt-5">
 
-        <!-- Trainer -->
-        <h2>Trainer</h2>
-        <div class="row">
-            <div class="col-sm-6 col-lg-4 text-center mb-2">
-                <div>
-                    <img class="rounded-circle person-pic" src="img/stock/c2.png">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <h6>
+                        <i class="fa-solid fa-calendar-days"></i> 
+                        Spillowend
+                    </h6>
+                    <h1>Spilldeeg / Training</h1>
+        
+                    <p class="fw-bold">D'Trainingsowender sinn op fir all Leit, ob Member oder nett Member.</p>
                 </div>
 
-                <h5>Elvira Berend</h5>
-                <p>Women Grandmaster FIDE</p>
-                <p>2x Weltmeeschter >50</p>
-            </div>   
+                <div class="col-lg-5">
+                    <div class="white-highlight-box">
+                        <h3>Schachschoul</h3>
 
-            <div class="col-sm-6 col-lg-4 text-center mb-2">
-                <div>
-                    <img class="rounded-circle person-pic" src="img/stock/c2.png">
+                        <ul>
+                            <li><b>Dënschdes</b> vun <b>14:30 - 17:15</b></li>
+                            <li><b>Donneschdes</b> vun <b>14:30 - 17:15</b></li>
+                            <li><b>Samschdes</b> vun <b>14:30 - 17:30</b></li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <h5>Jean-Claude Schuller</h5>
-                <p>International Master ICCF</p>
-            </div>
 
-            <div class="col-sm-6 col-lg-4 text-center mb-2">
-                <div>
-                    <img class="rounded-circle person-pic" src="img/stock/c2.png">
-                </div>
-                
-                <h5>Robert Ludewig</h5>
-                <p>3x Veteranemeeschter </p>
-            </div>
-
-            <div class="col-sm-6 col-lg-4 text-center mb-2">
-                <div>
-                    <img class="rounded-circle person-pic" src="img/stock/c2.png">
-                </div>
-                
-                <h5>Armand Kessler</h5>
-            </div>
-
-            <div class="col-sm-6 col-lg-4 text-center mb-2">
-                <div>
-                    <img class="rounded-circle person-pic" src="img/stock/c2.png">
-                </div>
-                
-                <h5>Olivier Litaneur</h5>
-            </div>
+             </div>
         </div>
 
+
+        
+        <div class="row mt-5">
+
+            <!-- Fotoen -->
+            <div class="col-md-6 mb-3 mb-md-0">
+                <h1>Fotoen</h1>
+
+                <div class="row g-5">
+
+                    <div class="col-6">
+                        <div class="card">
+                            <img src="img/preview/facebook.jpg" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <h4 class="card-title">Facebook Fotoen</h4>
+                                <a  class="stretched-link" target="_blank" href="https://www.facebook.com/media/set/?set=a.104547195157915&type=3"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="card">
+                            <img src="img/preview/google_drive.jpg" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <h4 class="card-title">Google Drive Fotoen</h4>
+                                <a  class="stretched-link" target="_blank" href="https://drive.google.com/drive/folders/1gnZ3elK99U322n6jnsr0b7EqEIhZyx0D?usp=share_link"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- External Schach Website Links -->
+            <div class="col-md-6">
+                <h1>Méi Schach:</h1>
+
+                <div class="ps-4">
+                    <p class="fw-bold">
+                        <a class="contact" target="_blank" href="#">
+                            <i class="fa-solid fa-circle-right"></i>
+                            Schach Website 1
+                        </a>
+                    </p>
+                    
+                    <p class="fw-bold">
+                        <a class="contact" target="_blank" href="#">
+                            <i class="fa-solid fa-circle-right"></i>
+                            Schach Website 2
+                        </a>
+                    </p>
+    
+                    <p class="fw-bold">
+                        <a class="contact" target="_blank" href="#">
+                            <i class="fa-solid fa-circle-right"></i>
+                            Schach Website 3
+                        </a>
+                    </p>
+                </div>
+                
+            </div>
+            
+        </div>
+
+
+        <!-- Trainer -->
+        <div class="mt-5">
+            <h1>Trainer :</h1>
+            <div class="row justify-content-center"> 
+
+                <div class="col-sm-6 col-lg-4 col-xl-2 text-center my-4 px-2">
+                    <div>
+                        <img class="rounded-circle person-pic-2" src="img/stock/c2.png">
+                    </div>
+
+                    <h4 class="mb-0">Elvira Berend</h4>
+                    <a class="contact" href="#">
+                        <i class="fa-solid fa-envelope"></i>
+                        #
+                    </a>
+                    <h6 class="highlight mb-0">
+                        Women Grandmaster FIDE <br>
+                        2 x Weltmeeschter >50
+                    </h6>
+                </div>   
+
+                <div class="col-sm-6 col-lg-4 col-xl-2 text-center my-4 px-2">
+                    <div>
+                        <img class="rounded-circle person-pic-2" src="img/stock/c2.png">
+                    </div>
+
+                    <h4 class="mb-0">Robert Ludewig</h4>
+                    <a class="contact" href="mailto:robertlu@pt.lu">
+                        <i class="fa-solid fa-envelope"></i>
+                        robertlu@pt.lu
+                    </a>
+                    <h6 class="highlight mb-0">3 x Veteranemeeschter</h6>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 col-xl-2 text-center my-4 px-2">
+                    <div>
+                        <img class="rounded-circle person-pic-2" src="img/stock/c2.png">
+                    </div>
+
+                    <h4 class="mb-0">Jean-Claude Schuller</h4>
+                    <a class="contact" href="mailto:jcs.tsm@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        jcs.tsm@gmail.com
+                    </a>
+                    <h6 class="highlight mb-0">International Master ICCF</h6>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 col-xl-2 text-center my-4 px-2">
+                    <div>
+                        <img class="rounded-circle person-pic-2" src="img/stock/c2.png">
+                    </div>
+
+                    <h4 class="mb-0">Armand Kessler</h4>
+                    <a class="contact" href="mailto:armandk1@pt.lu">
+                        <i class="fa-solid fa-envelope"></i>
+                        armandk1@pt.lu
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 col-xl-2 text-center my-4 px-2">
+                    <div>
+                        <img class="rounded-circle person-pic-2" src="img/stock/c2.png">
+                    </div>
+
+                    <h4 class="mb-0">Olivier Litaneur</h4>
+                    <a class="contact" href="#">
+                        <i class="fa-solid fa-envelope"></i>
+                        #
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        
+
         <!-- Jugend Commissioun -->
-        <h2>Jugend Commissioun</h2>
-        <div class="row">
-            <div class="col-sm-6 col-lg-4 text-center mb-2">
-                <div>
-                    <img class="rounded-circle person-pic" src="img/stock/c2.png">
-                </div>
+        <div class="mt5">
+            <h1>Jugend Commissioun :</h1> 
+            <div class="row justify-content-center">
 
-                <h5>Robert Ludewig</h5>
-            </div>   
-
-            <div class="col-sm-6 col-lg-4 text-center mb-2">
-                <div>
-                    <img class="rounded-circle person-pic" src="img/stock/c2.png">
-                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-2 text-center my-4 px-2">
+                    <div>
+                        <img class="rounded-circle person-pic-2" src="img/comite/thill_gerard.jpg">
+                    </div>
+                    
+                    <h4 class="mb-0">Robert Ludewig</h4>
+                    <a class="contact" href="mailto:robertlu@pt.lu">
+                        <i class="fa-solid fa-envelope"></i>
+                        robertlu@pt.lu
+                    </a>
+                </div> 
                 
-                <h5>Jean-Claude Schuller</h5>
-            </div>
+                <div class="col-sm-6 col-lg-4 col-xl-2 text-center my-4 px-2">
+                    <div>
+                        <img class="rounded-circle person-pic-2" src="img/stock/c2.png">
+                    </div>
 
-            <div class="col-sm-6 col-lg-4 text-center mb-2">
-                <div>
-                    <img class="rounded-circle person-pic" src="img/stock/c2.png">
+                    <h4 class="mb-0">Jean-Claude Schuller</h4>
+                    <a class="contact" href="mailto:jcs.tsm@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        jcs.tsm@gmail.com
+                    </a>
                 </div>
-                
-                <h5>Armand Kessler</h5>
-            </div>
 
-            <div class="col-sm-6 col-lg-4 text-center mb-2">
-                <div>
-                    <img class="rounded-circle person-pic" src="img/stock/c2.png">
-                </div>
-                
-                <h5>Myriam Pleim</h5>
-            </div>
+                <div class="col-sm-6 col-lg-4 col-xl-2 text-center my-4 px-2">
+                    <div>
+                        <img class="rounded-circle person-pic-2" src="img/stock/c2.png">
+                    </div>
+                    
+                    <h4 class="mb-0">Armand Kessler</h4>
+                    <a class="contact" href="mailto:armandk1@pt.lu">
+                        <i class="fa-solid fa-envelope"></i>
+                        armandk1@pt.lu
+                    </a>
+                </div> 
 
-            <div class="col-sm-6 col-lg-4 text-center mb-2">
-                <div>
-                    <img class="rounded-circle person-pic" src="img/stock/c2.png">
+                <div class="col-sm-6 col-lg-4 col-xl-2 text-center my-4 px-2">
+                    <div>
+                        <img class="rounded-circle person-pic-2" src="img/stock/c2.png">
+                    </div>
+                    
+                    <h4 class="mb-0">Myriam Pleim</h4>
+                    <a class="contact" href="mailto:myriampleim@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        myriampleim@gmail.com
+                    </a>
+                </div> 
+
+                <div class="col-sm-6 col-lg-4 col-xl-2 text-center my-4 px-2">
+                    <div>
+                        <img class="rounded-circle person-pic-2" src="img/stock/c2.png">
+                    </div>
+
+                    <h4 class="mb-0">Marianne Kessler</h4>
+                    <a class="contact" href="mailto:armandk1@pt.lu">
+                        <i class="fa-solid fa-envelope"></i>
+                        armandk1@pt.lu
+                    </a>
                 </div>
-                
-                <h5>Marianne Kessler </h5>
+
             </div>
         </div>
 

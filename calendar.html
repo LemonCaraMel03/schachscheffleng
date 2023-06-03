@@ -27,44 +27,17 @@
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
 
     <!-- Calendar Initialisation -->
-    <script>
-
-      document.addEventListener('DOMContentLoaded', function() {
-        var eventList = [
-            {
-                title: 'Last Saturday',
-                start: '2023-06-24T14:30:00',
-                end: '2023-06-24T17:30:00',
-            }
-        ]
-
-        var calendarElement = document.getElementById('calendar');
-        var calendar = new FullCalendar.Calendar(calendarElement, {
-            initialView: 'dayGridMonth',
-            height: "auto",
-            locale: "en-gb",
-            events: eventList,
-            eventClick: function(arg) {
-                document.getElementById("event-title").innerHTML = arg.event.title;
-                document.getElementById("event-start").innerHTML = arg.event.start;
-                document.getElementById("event-end").innerHTML = arg.event.end;
-
-                $("#event_modal").modal("show")
-            }
-        });
-
-        calendar.render();
-      });
-
-    </script>
+    <script src="js/calendar.js"></script>
 </head>
 
 
-<body onload="update_unmeldung(), update_news_bar()">
+<body onload="update_unmeldung(), update_news_bar(), update_calendar()">
 
     <!-- News Bar -->
-    <div  id="news-bar" class="news-container">
-        <div id="news-title" class="title"></div>
+    <div  id="news-bar" style="display: none;">
+        <div id="news-title-box">
+            <a id="news-title" class="btn btn-danger" href="#"></a>
+        </div>
         <ul id="news"></ul>
     </div>
     
@@ -170,110 +143,110 @@
     </div>
 
 
-   <!-- Footer -->
-   <div id="footer" class="bg-main">
-    <div class="container d-flex flex-column">
+    <!-- Footer -->
+    <div id="footer" class="bg-main">
+        <div class="container d-flex flex-column">
 
-        <div class="row mt-5">
+            <div class="row mt-5">
 
-            <div class="col-lg-8 ">
-                
-                <div class="row justify-content-between">
+                <div class="col-lg-8 ">
+                    
+                    <div class="row justify-content-between">
 
-                    <div class="col-sm-6">
-                        <!-- Kontakt -->
-                        <div class="d-flex flex-column">
-                            <h3>Kontakt</h3>
+                        <div class="col-sm-6">
+                            <!-- Kontakt -->
+                            <div class="d-flex flex-column">
+                                <h3>Kontakt</h3>
 
-                            <a href="mailto:armandk1@pt.lu">
-                                <i class="fa-solid fa-user-tie"></i>
-                                <b>KESSLER Armand :</b> armandk1@pt.lu
-                            </a> 
+                                <a href="mailto:armandk1@pt.lu">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                    <b>KESSLER Armand :</b> armandk1@pt.lu
+                                </a> 
 
-                            <a href="tel:+352 661 590 803" class="tel">
-                                <i class="fa-solid fa-phone"></i>
-                                +352 661 590 803
-                            </a>
-                            
-                            <a href="mailto:contact@schachscheffleng.com">
-                                <i class="fa-solid fa-envelope"></i>
-                                contact@schachscheffleng.com
-                            </a>
-
-                            <a href="files/unmeldung.pdf" target="_blank">
-                                <i class="fa-regular fa-file-lines"></i>
-                                Schachclub Unmeldung
-                            </a>
-
-                            <div class="d-inline mt-2">
-                                <a class="btn btn-social" href="https://www.facebook.com/SchachclubScheffleng" target="_blank">
-                                    <i class="fa-brands fa-facebook-f m-0"></i>
+                                <a href="tel:+352 661 590 803" class="tel">
+                                    <i class="fa-solid fa-phone"></i>
+                                    +352 661 590 803
                                 </a>
+                                
+                                <a href="mailto:contact@schachscheffleng.com">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    contact@schachscheffleng.com
+                                </a>
+
+                                <a href="files/unmeldung.pdf" target="_blank">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    Schachclub Unmeldung
+                                </a>
+
+                                <div class="d-inline mt-2">
+                                    <a class="btn btn-social" href="https://www.facebook.com/SchachclubScheffleng" target="_blank">
+                                        <i class="fa-brands fa-facebook-f m-0"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <hr class="my-3 d-sm-none">
+                        <hr class="my-3 d-sm-none">
 
-                    <div class="col-sm-3">
-                        <!-- Don -->
-                        <div class="d-flex flex-column">
-                            <h3>Don</h3>
+                        <div class="col-sm-3">
+                            <!-- Don -->
+                            <div class="d-flex flex-column">
+                                <h3>Don</h3>
 
-                            <img src="img/stock/c2.png" style="height: 150px; width: 150px;"/>
+                                <img src="img/stock/c2.png" style="height: 150px; width: 150px;"/>
+                            </div>
                         </div>
-                    </div>
 
-                </div>
-                
-
-                <hr class="my-3">
-
-                <!-- Sponsors -->
-                <div class="d-flex flex-column">
-                    <h3>Sponsors</h3>
-
-                    <div class="d-inline">
-                        <a href="https://www.pezzotta.lu/">
-                            <img src="img/sponsors/PezottaLogo.png" width="210" height="120" style="border:2px solid #4e088f">
-                        </a>
-                        <a href="files/sponsors/KEBAB Snack Moris Home Page.pdf">
-                            <img src="img/sponsors/KebabSnackMorisLogo.png" width="210" height="120" style="border:2px solid #4e088f">
-                        </a>
                     </div>
                     
-                </div>
 
-            </div>
+                    <hr class="my-3">
 
-            <hr class="my-3 d-lg-none">
+                    <!-- Sponsors -->
+                    <div class="d-flex flex-column">
+                        <h3>Sponsors</h3>
 
-            <!-- Áddress -->
-            <div class="col-lg-4 d-flex flex-column">
-                <h3>Adress</h3>
-
-                <p>
-                    <i class="fa-solid fa-location-dot"></i>
-                    1 Rue du Moulin, L-3857, Schëffleng
-                </p>
-
-                <div style="overflow:hidden;max-width:100%;width:400px;height:320px;">
-                    <div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;">
-                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=1,+rue+de+Moulin,+L-3857,+Schëffleng&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                        <div class="d-inline">
+                            <a href="https://www.pezzotta.lu/">
+                                <img src="img/sponsors/PezottaLogo.png" width="210" height="120" style="border:2px solid #4e088f">
+                            </a>
+                            <a href="files/sponsors/KEBAB Snack Moris Home Page.pdf">
+                                <img src="img/sponsors/KebabSnackMorisLogo.png" width="210" height="120" style="border:2px solid #4e088f">
+                            </a>
+                        </div>
+                        
                     </div>
-                    <a class="googlecoder" href="https://kbj9qpmy.com/bp" id="make-map-infor-mation">Broadband Providers</a>
+
                 </div>
+
+                <hr class="my-3 d-lg-none">
+
+                <!-- Áddress -->
+                <div class="col-lg-4 d-flex flex-column">
+                    <h3>Adress</h3>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        1 Rue du Moulin, L-3857, Schëffleng
+                    </p>
+
+                    <div style="overflow:hidden;max-width:100%;width:400px;height:320px;">
+                        <div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;">
+                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=1,+rue+de+Moulin,+L-3857,+Schëffleng&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                        </div>
+                        <a class="googlecoder" href="https://kbj9qpmy.com/bp" id="make-map-infor-mation">Broadband Providers</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Copyright & Dateschutz -->
+            <div class="align-self-center mt-5">
+                <p> Copyright © 2023 Tuerm a Sprénger Matt Schëffleng // <a href="files/Dateschutz.pdf" target="_blank"> Dateschutz</a></p>
             </div>
 
         </div>
-
-        <!-- Copyright & Dateschutz -->
-        <div class="align-self-center mt-5">
-            <p> Copyright © 2023 Tuerm a Sprénger Matt Schëffleng // <a href="files/Dateschutz.pdf" target="_blank"> Dateschutz</a></p>
-        </div>
-
     </div>
-</div>
 
     <!-- Event Modal -->
     <div id="event_modal" class="modal">
@@ -284,6 +257,7 @@
                     <h1 id="event-title"></h1>
                     <p id="event-start"></p>
                     <p id="event-end"></p>
+                    <p id="event-link"></p>
                 </div>
 
                 <div class="modal-footer">

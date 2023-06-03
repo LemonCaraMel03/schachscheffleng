@@ -1,3 +1,6 @@
+/* Lëscht vun Unmeldungen */
+
+
 /**
  * Präziseier en Titel and en Link fir all Unmeldungs - Element.
  * 
@@ -6,10 +9,10 @@
  * 
  * All Element an der Lëscht muss esou ausgesinn:
  * 
- *      "  Titel  "  :  "  Link  "  ,
+ *      "  Titel  "  :  "  Link  "
  * 
  * Wichteg!!
- * Ganz zum Schluss, hannert deem leschten Element däerf KEEN Komma sinn !!!
+ * Zweschen all Elementer muss en Komma sinn!!!
  * 
  */
 
@@ -18,7 +21,7 @@ const unmeldung = {
 
     /* Titel */                         /* Link */
     "InterClub Championat":             "#",
-    "Club Championat":                  "#"
+    "Club Championat":                  "#",
 
 }
 
