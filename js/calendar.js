@@ -65,10 +65,10 @@ function update_calendar() {
         locale: "en-gb",
         events: eventList,
         eventClick: function(arg) {
-            document.getElementById("event-title").innerHTML = arg.event.title;
-            document.getElementById("event-start").innerHTML = arg.event.start;
-            document.getElementById("event-end").innerHTML = arg.event.end;
-            document.getElementById("event-link").innerHTML = arg.event.extendedProps.link;
+            document.getElementById("event-title").innerHTML = "<b>Title</b> : " + arg.event.title;
+            document.getElementById("event-start").innerHTML = "<b>Start Date</b> : " + arg.event.start;
+            document.getElementById("event-end").innerHTML = "<b>End Date</b> : " + arg.event.end;
+            document.getElementById("event-link").innerHTML = "<b>Link</b> : " + arg.event.extendedProps.link;
 
             $("#event_modal").modal("show")
         }
