@@ -1,5 +1,5 @@
 .navbar-nav .nav-link {
-    margin: 0 1rem;
+    margin: 0 0.5rem;
 }
 
 #schachschoul {
@@ -53,28 +53,8 @@
 
 
 /* Calendar */
-.fc * {
-    text-decoration: none;
-    color: black;
-}
-
-.fc-button-primary {
-    background-color: #4e088fa9 !important;
-}
-
-.fc-day-today {
-    background-color: #4e088f29 !important;
-}
-
-.fc-daygrid-event-dot {
-    border-color: #dc3545;
-}
-
-.fc-view {
-    background-color: #eeeeee76;
-}
-.fc-day-other {
-    background-color: #0000000d;
+#calendarTitle {
+    font-size: 4rem;
 }
 
 
@@ -151,6 +131,10 @@ i {
     height: 100%;
 }
 
+.highlight-box-tight {
+    padding: 0.65rem 0.9rem;
+}
+
 .picture-card {
     background-color: #4e088f;
     color: white;
@@ -210,6 +194,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0 1rem;
     padding: 0.75rem 1rem;
     margin: 0 0.5rem 0.5rem 0;
+    height: fit-content;
 }
 
 .btn-outline-light {
