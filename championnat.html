@@ -27,7 +27,7 @@
 </head>
 
 
-<body onload="update_Umeldung(), update_news_bar()">
+<body onload="update_news_bar()">
 
     <!-- News Bar -->
     <div  id="news-bar" style="display: none;">
@@ -139,145 +139,179 @@
     <div class="container py-5">
 
         <div class="row">
+            <h1 class="display-3">Championnat 2023/2024</h1>
         
-            <div class="col-8 d-flex flex-column">
-                <h1 class="display-3">Championnat 2023/2024</h1>
+            <div class="col-lg-7 mb-4 mb-lg-0 d-flex flex-column">
 
                 <!-- Teams -->
                 <h1>Teams</h1>
-                <div class="row">
+                <div class="row mb-3">
 
                     <div class="col-6 d-flex flex-column">
-                        <a class="btn btn-primary" href="files/Interclub Championship/Team 0.pdf" target="_blank">TEAM 1</a>
-                        <a class="btn btn-primary" href="files/Interclub Championship/Team 1.pdf" target="_blank">TEAM 2</a>
-                        <a class="btn btn-primary" href="files/Interclub Championship/Team 3.pdf" target="_blank">TEAM 3</a>
-                        <a class="btn btn-primary" href="files/Interclub Championship/Team 4.pdf" target="_blank">TEAM 4</a>
+                        <a class="btn btn-info fw-bold" href="files/Interclub Championship/Team 0.pdf" target="_blank">TEAM 1</a>
+                        <a class="btn btn-info fw-bold" href="files/Interclub Championship/Team 1.pdf" target="_blank">TEAM 2</a>
+                        <a class="btn btn-info fw-bold" href="files/Interclub Championship/Team 3.pdf" target="_blank">TEAM 3</a>
+                        <a class="btn btn-info fw-bold" href="files/Interclub Championship/Team 4.pdf" target="_blank">TEAM 4</a>
                     </div>
 
                     <div class="col-6 d-flex flex-column">
-                        <a class="btn btn-primary" href="files/Interclub Championship/Team 5.pdf" target="_blank">TEAM 5</a>
-                        <a class="btn btn-primary" href="files/Interclub Championship/Team 6.pdf" target="_blank">TEAM 6</a>
-                        <a class="btn btn-primary" href="files/Interclub Championship/Team 7.pdf" target="_blank">TEAM 7</a>
+                        <a class="btn btn-info fw-bold" href="files/Interclub Championship/Team 5.pdf" target="_blank">TEAM 5</a>
+                        <a class="btn btn-info fw-bold" href="files/Interclub Championship/Team 6.pdf" target="_blank">TEAM 6</a>
+                        <a class="btn btn-info fw-bold" href="files/Interclub Championship/Team 7.pdf" target="_blank">TEAM 7</a>
                     </div>
 
                 </div>
+
+                <hr class="mb-4">
                 
+                <a class="btn btn-danger fw-bold" href="https://www.flde.lu/resultats/" style="width: 100%;">FLDE Resultater fir all d'Clibb</a>
 
-                <div class="row mt-auto">
-
-                    <!-- FLDE Resultater Link -->
-                    <div class="col-md-4">
-                        <h1>All Resultater</h1>
-                        <a href="https://www.flde.lu/resultats/" class="btn btn-primary" style="width: 100%;">Resultats</a>
-                    </div>
-        
-                    <!-- Fotoen -->
-                    <div class="col-md-8 mb-3 mb-md-0">
-                        <h1>Fotoen</h1>
-        
-                        <div class="row g-5">
-        
-                            <div class="col-6">
-                                <div class="card picture-card">
-                                    <img src="img/preview/facebook.jpg" class="card-img-top" alt="...">
-        
-                                    <div class="card-body">
-                                        <h4 class="card-title">Facebook Fotoen</h4>
-                                        <a  class="stretched-link" target="_blank" href="https://www.facebook.com/media/set/?set=a.104547195157915&type=3"></a>
-                                    </div>
+                <!-- Fotoen -->
+                <div class="col-xl-10 mt-auto d-none d-lg-block">
+                    <h1>Fotoen</h1>
+    
+                    <div class="row g-5">
+    
+                        <div class="col-6">
+                            <div class="card picture-card">
+                                <img src="img/preview/facebook.jpg" class="card-img-top" alt="...">
+    
+                                <div class="card-body">
+                                    <h4 class="card-title">Facebook Fotoen</h4>
+                                    <a  class="stretched-link" target="_blank" href="https://www.facebook.com/media/set/?set=a.104547195157915&type=3"></a>
                                 </div>
                             </div>
-        
-                            <div class="col-6">
-                                <div class="card picture-card">
-                                    <img src="img/preview/google_drive.jpg" class="card-img-top" alt="...">
-        
-                                    <div class="card-body">
-                                        <h4 class="card-title">Google Drive Fotoen</h4>
-                                        <a  class="stretched-link" target="_blank" href="https://drive.google.com/drive/folders/1gnZ3elK99U322n6jnsr0b7EqEIhZyx0D?usp=share_link"></a>
-                                    </div>
-                                </div>
-                            </div>
-        
                         </div>
-        
+    
+                        <div class="col-6">
+                            <div class="card picture-card">
+                                <img src="img/preview/google_drive.jpg" class="card-img-top" alt="...">
+    
+                                <div class="card-body">
+                                    <h4 class="card-title">Google Drive Fotoen</h4>
+                                    <a  class="stretched-link" target="_blank" href="https://drive.google.com/drive/folders/1gnZ3elK99U322n6jnsr0b7EqEIhZyx0D?usp=share_link"></a>
+                                </div>
+                            </div>
+                        </div>
+    
                     </div>
-                    
+    
                 </div>
 
             </div>
 
             <!-- Rounds -->
-            <div class="col-4">
-                <div class="highlight-box highlight-box-tight mb-4">
-                    <h2>Rondes Préliminaires</h2>
-            
-                    <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
-                        <h4 class="mb-0 me-3">01</h4>
-                        <div class="vr me-3"></div>
-                        <h5 class="mb-0">24 September 2023</h5>
-                    </div>
+            <div class="col-lg-5">
+
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-12">
+                        <div class="highlight-box highlight-box-tight mb-3">
+                            <h2>Rondes Préliminaires</h2>
+                    
+                            <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
+                                <h4 class="mb-0 me-3">01</h4>
+                                <div class="vr me-3"></div>
+                                <h5 class="mb-0">24 September 2023</h5>
+                            </div>
+                
+                            <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
+                                <h4 class="mb-0 me-3">02</h4>
+                                <div class="vr me-3"></div>
+                                <h5 class="mb-0">15 Oktober 2023</h5>
+                            </div>
         
-                    <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
-                        <h4 class="mb-0 me-3">02</h4>
-                        <div class="vr me-3"></div>
-                        <h5 class="mb-0">15 Oktober 2023</h5>
-                    </div>
-
-                    <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
-                        <h4 class="mb-0 me-3">03</h4>
-                        <div class="vr me-3"></div>
-                        <h5 class="mb-0">12 November 2023</h5>
-                    </div>
-
-                    <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
-                        <h4 class="mb-0 me-3">04</h4>
-                        <div class="vr me-3"></div>
-                        <h5 class="mb-0">26 November 2023</h5>
-                    </div>
-
-                    <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
-                        <h4 class="mb-0 me-3">05</h4>
-                        <div class="vr me-3"></div>
-                        <h5 class="mb-0">10 Dezember 2023</h5>
-                    </div>
-
-                    <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
-                        <h4 class="mb-0 me-3">06</h4>
-                        <div class="vr me-3"></div>
-                        <h5 class="mb-0">14 Januar 2024</h5>
-                    </div>
-
-                    <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
-                        <h4 class="mb-0 me-3">07</h4>
-                        <div class="vr me-3"></div>
-                        <h5 class="mb-0">28 Januar 2024</h5>
-                    </div>
+                            <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
+                                <h4 class="mb-0 me-3">03</h4>
+                                <div class="vr me-3"></div>
+                                <h5 class="mb-0">12 November 2023</h5>
+                            </div>
         
+                            <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
+                                <h4 class="mb-0 me-3">04</h4>
+                                <div class="vr me-3"></div>
+                                <h5 class="mb-0">26 November 2023</h5>
+                            </div>
+        
+                            <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
+                                <h4 class="mb-0 me-3">05</h4>
+                                <div class="vr me-3"></div>
+                                <h5 class="mb-0">10 Dezember 2023</h5>
+                            </div>
+        
+                            <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
+                                <h4 class="mb-0 me-3">06</h4>
+                                <div class="vr me-3"></div>
+                                <h5 class="mb-0">14 Januar 2024</h5>
+                            </div>
+        
+                            <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
+                                <h4 class="mb-0 me-3">07</h4>
+                                <div class="vr me-3"></div>
+                                <h5 class="mb-0">28 Januar 2024</h5>
+                            </div>
+                
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-12">
+                        <div class="highlight-box highlight-box-tight">
+                            <h2>Rondes Finales</h2>
+                    
+                            <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
+                                <h4 class="mb-0 me-3">08</h4>
+                                <div class="vr me-3"></div>
+                                <h5 class="mb-0">25 Febuar 2024</h5>
+                            </div>
+        
+                            <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
+                                <h4 class="mb-0 me-3">09</h4>
+                                <div class="vr me-3"></div>
+                                <h5 class="mb-0">10 März 2024</h5>
+                            </div>
+        
+                            <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
+                                <h4 class="mb-0 me-3">10</h4>
+                                <div class="vr me-3"></div>
+                                <h5 class="mb-0">24 März 2024</h5>
+                            </div>
+                
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="highlight-box highlight-box-tight">
-                    <h2>Rondes Finales</h2>
-            
-                    <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
-                        <h4 class="mb-0 me-3">08</h4>
-                        <div class="vr me-3"></div>
-                        <h5 class="mb-0">25 Febuar 2024</h5>
+                <!-- Fotoen -->
+                <div class="d-lg-none mt-4">
+                    <h1>Fotoen</h1>
+    
+                    <div class="row g-5">
+    
+                        <div class="col-6">
+                            <div class="card picture-card">
+                                <img src="img/preview/facebook.jpg" class="card-img-top" alt="...">
+    
+                                <div class="card-body">
+                                    <h4 class="card-title">Facebook Fotoen</h4>
+                                    <a  class="stretched-link" target="_blank" href="https://www.facebook.com/media/set/?set=a.104547195157915&type=3"></a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-6">
+                            <div class="card picture-card">
+                                <img src="img/preview/google_drive.jpg" class="card-img-top" alt="...">
+    
+                                <div class="card-body">
+                                    <h4 class="card-title">Google Drive Fotoen</h4>
+                                    <a  class="stretched-link" target="_blank" href="https://drive.google.com/drive/folders/1gnZ3elK99U322n6jnsr0b7EqEIhZyx0D?usp=share_link"></a>
+                                </div>
+                            </div>
+                        </div>
+    
                     </div>
-
-                    <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
-                        <h4 class="mb-0 me-3">09</h4>
-                        <div class="vr me-3"></div>
-                        <h5 class="mb-0">10 März 2024</h5>
-                    </div>
-
-                    <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
-                        <h4 class="mb-0 me-3">10</h4>
-                        <div class="vr me-3"></div>
-                        <h5 class="mb-0">24 März 2024</h5>
-                    </div>
-        
+    
                 </div>
+
             </div>
 
         </div> 
@@ -319,7 +353,7 @@
 
                     <!-- Don -->
                     <h3>Maach en Don:</h3>
-                    <img src="img/stock/c2.png" style="width: 80%;"/>
+                    <img src="img/stock/c2.png" style="width: 80%; max-width: 250px;"/>
 
                 </div>
 
@@ -327,7 +361,10 @@
     
             <!-- Copyright & Dateschutz -->
             <div class="align-self-center mt-5">
-                <p> Copyright © 2023 Tuerm a Sprénger Matt Schëffleng // <a href="files/Dateschutz.pdf" target="_blank"> Dateschutz</a></p>
+                <p> Copyright © 2023 Tuerm a Sprénger Matt Schëffleng // 
+                    <a href="files/Dateschutz.pdf" target="_blank"> Dateschutz</a> //
+                    <a href="files/statuts.pdf" target="_blank"> Statuten</a>
+                </p>
             </div>
 
         </div>

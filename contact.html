@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Schachclub Schëffleng</title>
+    <title>Kontakt</title>
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,7 +27,7 @@
 </head>
 
 
-<body onload="update_Umeldung(), update_news_bar(), toggle_info_modal()">
+<body onload="update_news_bar()">
 
     <!-- News Bar -->
     <div  id="news-bar" style="display: none;">
@@ -140,53 +140,61 @@
     <!-- Content -->
     <div class="container py-5">
 
-        <h1 class="display-3">Kontakt</h1>
-
         <div class="row">
+            <!-- Kontakt -->
+            <div class="col-lg-7">
+                <h1 class="display-3">Kontakt</h1>
 
-            <div class="col-6">
-                <!-- Kontakt -->
-                <div class="d-flex flex-column">
-                    <h3>Kontakt</h3>
-
-                    <a href="mailto:armandk1@pt.lu">
-                        <i class="fa-solid fa-user-tie"></i>
-                        <b>KESSLER Armand :</b> armandk1@pt.lu
-                    </a> 
-
-                    <a href="tel:+352 661 590 803" class="tel">
-                        <i class="fa-solid fa-phone"></i>
-                        +352 661 590 803
-                    </a>
-                    
-                    <a href="mailto:contact@schachscheffleng.com">
-                        <i class="fa-solid fa-envelope"></i>
-                        contact@schachscheffleng.com
-                    </a>
-
-                    <a href="files/Umeldung.pdf" target="_blank">
-                        <i class="fa-regular fa-file-lines"></i>
-                        Schachclub Umeldung
-                    </a>
-
-                    <div class="d-inline mt-2">
-                        <a class="btn btn-social" href="https://www.facebook.com/SchachclubScheffleng" target="_blank">
-                            <i class="fa-brands fa-facebook-f m-0"></i>
-                        </a>
+                <div class="row">
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <img class="rounded-circle" src="img/stock/c2.png" style="width: 100%; max-width: 250px; border: 3px solid black;">
                     </div>
+                    
+                    <div class="col-md-6 col-lg-8 mt-3 mt-md-0 d-flex justify-content-center justify-content-md-start">
+                        <div class="d-flex flex-column justify-content-end">
+                            <a class="contact" href="mailto:armandk1@pt.lu">
+                                <i class="fa-solid fa-user-tie"></i>
+                                <b>KESSLER Armand :</b> armandk1@pt.lu
+                            </a> 
+        
+                            <a class="contact" href="tel:+352 661 590 803" class="tel">
+                                <i class="fa-solid fa-phone"></i>
+                                +352 661 590 803
+                            </a>
+                            
+                            <a class="contact" href="mailto:contact@schachscheffleng.com">
+                                <i class="fa-solid fa-envelope"></i>
+                                contact@schachscheffleng.com
+                            </a>
+    
+                            <div class="d-inline mt-3">
+                                <a class="btn btn-primary" href="https://www.facebook.com/SchachclubScheffleng" target="_blank" style="width: 50px; height: 50px;">
+                                    <i class="fa-brands fa-facebook-f m-0"></i>
+                                </a>
+                                
+                                <a class="btn btn-danger fw-bold" href="files/umeldung.pdf">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    Mell dech bei eis un!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
+                
             </div>
 
-            <div class="col-6">
-                <!-- Address -->
-                <h3>Adress</h3>
+            <!-- Adress -->
+            <div class="col-lg-5 mt-4 mt-lg-0">
+                
+                <h1 class="display-3">Adress</h1>
 
                 <p>
                     <i class="fa-solid fa-location-dot"></i>
                     1 Rue du Moulin, L-3857, Schëffleng
                 </p>
 
-                <div style="overflow:hidden;max-width:100%;width:400px;height:320px;">
+                <div style="overflow:hidden;max-width:100%;width:500px;height:320px;">
                     <div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;">
                         <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=1,+rue+de+Moulin,+L-3857,+Schëffleng&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
                     </div>
@@ -232,7 +240,7 @@
 
                     <!-- Don -->
                     <h3>Maach en Don:</h3>
-                    <img src="img/stock/c2.png" style="width: 80%;"/>
+                    <img src="img/stock/c2.png" style="width: 80%; max-width: 250px;"/>
 
                 </div>
 
@@ -240,7 +248,10 @@
     
             <!-- Copyright & Dateschutz -->
             <div class="align-self-center mt-5">
-                <p> Copyright © 2023 Tuerm a Sprénger Matt Schëffleng // <a href="files/Dateschutz.pdf" target="_blank"> Dateschutz</a></p>
+                <p> Copyright © 2023 Tuerm a Sprénger Matt Schëffleng // 
+                    <a href="files/Dateschutz.pdf" target="_blank"> Dateschutz</a> //
+                    <a href="files/statuts.pdf" target="_blank"> Statuten</a>
+                </p>
             </div>
 
         </div>
