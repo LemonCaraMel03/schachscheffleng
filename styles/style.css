@@ -103,9 +103,16 @@ i {
     background-color: #4e088f;
     color: white;
     border-radius: 0 5rem 0 1rem;
-    padding: 1.75rem 1.5rem 1.25rem 1.5rem;
+    padding: 1.5rem;
     margin: 0 1rem;
     box-shadow: 10px 10px #4e088f72;
+}
+
+@media (max-width: 576px) {
+    .highlight-box {
+        margin: 0;
+        margin-right: 0.5rem !important;
+    }
 }
 
 .white-highlight-box {
@@ -131,6 +138,16 @@ i {
     color: white;
     border-radius: 0.25rem 0.25rem 0 1rem;
     box-shadow: 10px 10px #4e088f72;
+}
+
+@media (max-width: 400px) {
+    .col-picture-card {
+        width: 100%;
+    }
+}
+
+.fotoen {
+    margin-right: 0rem;
 }
 
 
@@ -162,6 +179,20 @@ h1, h2, h3, h4, h5, h6 {
     color: rgba(0, 0, 0, 0.486);
 }
 
+.contact-light {
+    color: white;
+    text-decoration: none;
+}
+.contact-light:hover {
+    color: rgba(255, 255, 255, 0.757);
+}
+
+@media (max-width: 350px) {
+    .contact-light {
+        font-size: 0.75rem;
+    }
+}
+
 #footer {
     color: white;
 }
@@ -187,6 +218,23 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0.25rem;
     color: rgba(255,255,255,.55);
     border-color: rgba(255,255,255,.1);
+}
+
+.btn-social {
+    border-color: rgba(255, 255, 255, 0.100);
+    background-color: rgba(255, 255, 255, 0.100);
+    color: white;
+    width: 50px; 
+    height: 50px;
+}
+.btn-social:hover {
+    background-color: rgba(0, 0, 0, 0.250);
+}
+
+@media (max-width: 576px) {
+    .btn-social, .btn-umeldung {
+        width: 100% !important;
+    }
 }
 
 .btn-primary {

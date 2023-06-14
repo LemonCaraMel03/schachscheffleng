@@ -163,10 +163,35 @@
             </div>
 
             <div class="col-lg-6">
-                <img src="img/gallery/s3.jpg" width="100%"/>
+                <div id="carousel" class="carousel slide" data-bs-ride="carousel">    
+                
+                    <div class="carousel-inner bg-dark d-flex align-items-center">
+                      <div class="carousel-item active">
+                        <img src="img/gallery/s3.jpg" class="d-block w-100" alt="...">
+                      </div>
+    
+                      <div class="carousel-item">
+                        <img src="img/stock/schoul4.jpg" class="d-block w-100" alt="...">
+                      </div>
+    
+                      <div class="carousel-item">
+                        <img src="img/gallery/x10.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
 
-         </div>
+        </div>
+
 
         <!-- Spilldeeg/ Training -->
         <div class="highlight-box mt-4">
@@ -198,16 +223,16 @@
         </div>
 
 
-        
-        <div class="row mt-5">
+        <!-- Fotoen and Schachsites -->
+        <div class="row g-4 mt-4">
 
             <!-- Fotoen -->
-            <div class="col-md-6 mb-3 mb-md-0">
+            <div class="col-lg-7 col-xl-6 d-none d-lg-block">
                 <h1>Fotoen</h1>
 
                 <div class="row g-5">
 
-                    <div class="col-6">
+                    <div class="col-lg-6 col-xxl-5">
                         <div class="card picture-card">
                             <img src="img/preview/facebook.jpg" class="card-img-top" alt="...">
 
@@ -218,7 +243,7 @@
                         </div>
                     </div>
 
-                    <div class="col-6">
+                    <div class="col-lg-6 col-xxl-5">
                         <div class="card picture-card">
                             <img src="img/preview/google_drive.jpg" class="card-img-top" alt="...">
 
@@ -234,30 +259,24 @@
             </div>
 
             <!-- External Schach Website Links -->
-            <div class="col-md-6">
-                <h1>Méi Schach:</h1>
+            <div class="col-lg-5 col-xl-6">
+                <h1>Méi Schach</h1>
 
-                <div class="ps-4">
-                    <p class="fw-bold">
-                        <a class="contact" target="_blank" href="#">
-                            <i class="fa-solid fa-circle-right"></i>
-                            Schach Website 1
-                        </a>
-                    </p>
+                <div class="d-flex flex-column ps-4">
+                    <a class="btn btn-danger fw-bold" target="_blank" href="#">
+                        <i class="fa-solid fa-circle-right"></i>
+                        Schach Website 1
+                    </a>
                     
-                    <p class="fw-bold">
-                        <a class="contact" target="_blank" href="#">
-                            <i class="fa-solid fa-circle-right"></i>
-                            Schach Website 2
-                        </a>
-                    </p>
-    
-                    <p class="fw-bold">
-                        <a class="contact" target="_blank" href="#">
-                            <i class="fa-solid fa-circle-right"></i>
-                            Schach Website 3
-                        </a>
-                    </p>
+                    <a class="btn btn-danger fw-bold" target="_blank" href="#">
+                        <i class="fa-solid fa-circle-right"></i>
+                        Schach Website 1
+                    </a>
+
+                    <a class="btn btn-danger fw-bold" target="_blank" href="#">
+                        <i class="fa-solid fa-circle-right"></i>
+                        Schach Website 1
+                    </a>
                 </div>
                 
             </div>
@@ -265,9 +284,111 @@
         </div>
 
 
+        <!-- Adress an Équippe -->
+        <div class="row g-4 mt-4">
+
+            <!-- Adress -->
+            <div class="col-lg-4 d-none d-lg-block">
+                <h1>Adress</h1>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    1 Rue du Moulin, L-3857, Schëffleng
+                </p>
+
+                <div style="overflow:hidden;width:100%;height:320px;">
+                    <div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;">
+                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=1,+rue+de+Moulin,+L-3857,+Schëffleng&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                    </div>
+                    <a class="googlecoder" href="https://kbj9qpmy.com/bp" id="make-map-infor-mation">Broadband Providers</a>
+                </div>
+
+            </div>
+            
+            <!-- Équippe Info -->
+            <div class="col-lg-8">
+
+                <div class="highlight-box">
+                    <h6>
+                        <i class="fa-solid fa-people-group"></i>
+                        Altersgruppen
+                    </h6>
+                    <h1>Eis Équippen</h1>
+
+                    <p class="fw-bold mb-1">
+                        Information iwwer d'Équippen ...
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et feugiat erat. Fusce urna felis, auctor id mollis vel, blandit eu eros. Nullam rutrum, enim ut lobortis porta, risus diam vulputate risus, a commodo nibh ex non tortor. 
+                    </p>
+
+                    <div class="white-highlight-box" style="height: 200px">
+
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+
+        <!-- Mobile Fotoen an Adress -->
+        <div class="mt-5">
+
+            <!-- Adress -->
+            <div class="d-lg-none mb-3">
+                <h1>Adress</h1>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    1 Rue du Moulin, L-3857, Schëffleng
+                </p>
+
+                <div style="overflow:hidden;width:100%;height:320px;">
+                    <div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;">
+                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=1,+rue+de+Moulin,+L-3857,+Schëffleng&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                    </div>
+                    <a class="googlecoder" href="https://kbj9qpmy.com/bp" id="make-map-infor-mation">Broadband Providers</a>
+                </div>
+
+            </div>
+
+            <!-- Fotoen -->
+            <div class="d-lg-none">
+                <h1>Fotoen</h1>
+
+                <div class="row g-5 fotoen">
+
+                    <div class="col-picture-card col-6">
+                        <div class="card picture-card">
+                            <img src="img/preview/facebook.jpg" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <h4 class="card-title">Facebook Fotoen</h4>
+                                <a  class="stretched-link" target="_blank" href="https://www.facebook.com/media/set/?set=a.104547195157915&type=3"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-picture-card col-6">
+                        <div class="card picture-card">
+                            <img src="img/preview/google_drive.jpg" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <h4 class="card-title">Google Drive Fotoen</h4>
+                                <a  class="stretched-link" target="_blank" href="https://drive.google.com/drive/folders/1gnZ3elK99U322n6jnsr0b7EqEIhZyx0D?usp=share_link"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
         <!-- Trainer -->
         <div class="mt-5">
-            <h1>Trainer : </h1> 
+            <h1>Trainer</h1> 
             <div class="row">
 
                 <div class="col-mini col-6 col-md-4 col-xl-2 text-center my-4 px-2">
@@ -343,8 +464,8 @@
         
 
         <!-- Jugend Commissioun -->
-        <div class="mt5">
-            <h1>Jugend Commissioun :</h1> 
+        <div class="mt-2">
+            <h1>Jugend Commissioun</h1> 
             <div class="row">
 
                 <div class="col-mini col-6 col-md-4 col-xl-2 text-center my-4 px-2">
@@ -409,6 +530,7 @@
 
             </div>
         </div>
+
 
     </div>
 
