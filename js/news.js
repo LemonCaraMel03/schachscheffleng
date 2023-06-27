@@ -2,10 +2,13 @@
 
 
 /**
- * Präziseier en Titel an Link, an News Elementer.
+ * Präziseier 
+ *      en Titel (newsTitle), 
+ *      en Link (newsLink) [OPTIONAL]
+ *      an News Texter (news).
  * 
  * Wichteg!!
- * Zweschen all News Elementer muss en Komma sinn!!!
+ * Zweschen all News Texter muss en Komma sinn!!!
  * 
  */
 

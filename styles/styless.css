@@ -126,7 +126,7 @@ i {
     background-color: #4e088f72;
 }
 .bg-main-light {
-    background-color: #4e088f29;
+    background-color: #4e088f29 !important;
 }
 
 
@@ -146,7 +146,6 @@ i {
     color: black;
     border-radius: 0 5rem 0 1rem;
     padding: 1.25rem 1.5rem;
-    height: 100%;
 }
 
 @media (max-width: 576px) {
