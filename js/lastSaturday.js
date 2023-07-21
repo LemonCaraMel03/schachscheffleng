@@ -8,13 +8,13 @@
  *      an News Texter (news).
  * 
  * Wichteg!!
- * Zweschen all News Texter muss en Komma sinn!!!
+ * Zweschen all News Texter muss enupdate_lastsaturday_info() Komma sinn!!!
  * 
  */
 
 
 /* Datum, Umeldungs Link an Resultater Link */
-var datum = "29 Juli 2023";
+var datum = "";
 var umeldungLink = "";
 var resultaterLink = "";
 
@@ -44,7 +44,7 @@ function update_lastsaturday_info() {
             document.getElementById("resultater").classList.add("disabled")
         }
     } else {
-        document.getElementById("datum").innerHTML = '<i class="fa-regular fa-calendar"></i> TBA';
+        document.getElementById("datum").innerHTML = '<i class="fa-regular fa-calendar"></i> To be Announced';
 
         document.getElementById("umeldung").classList.add("disabled")
         document.getElementById("resultater").classList.add("disabled")

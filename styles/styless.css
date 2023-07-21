@@ -9,6 +9,12 @@
     padding: 0.75rem 1rem;
 }
 
+@media (max-width: 360px) {
+    .col-xsm-6 {
+        width: 50%;
+    }
+}
+
 #header-title {
     font-size: 1.8rem;
 }
@@ -95,6 +101,9 @@
     .carousel-inner {
         height: 400px;
     }
+    .carousel-s {
+        height: 350px !important;
+    }
 }
 
 
@@ -114,6 +123,14 @@ i {
     height: 120px;
     border:2px solid #4e088f;
     margin-right: 0.5rem;
+}
+
+.don {
+    width: 80%; 
+    max-width: 250px;
+}
+.don:hover {
+    opacity: 0.8;
 }
 
 
@@ -155,6 +172,7 @@ i {
         padding: 0.9rem;
     }
     .white-highlight-box {
+        border-radius: 0 3rem 0 1rem;
         padding: 0.9rem;
     }
 }
