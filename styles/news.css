@@ -25,6 +25,12 @@
     height: 100%;
 }
 
+@media (max-width: 576px) {
+    #news-title {
+        font-size: 0.75rem;
+    }
+}
+
 #news-bar  ul {
     display: flex;
     list-style: none;

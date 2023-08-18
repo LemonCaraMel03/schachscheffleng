@@ -9,6 +9,12 @@
     padding: 0.75rem 1rem;
 }
 
+@media (max-width: 577px) {
+    #top-bar {
+        margin-top: 38px !important;
+    }
+}
+
 @media (max-width: 360px) {
     .col-xsm-6 {
         width: 50%;
@@ -165,6 +171,10 @@ i {
     padding: 1.25rem 1.5rem;
 }
 
+.link-box:hover {
+    background-color: lightgray !important;
+}
+
 @media (max-width: 576px) {
     .highlight-box {
         margin: 0;
@@ -208,6 +218,10 @@ i {
 /* Text */
 body {
     font-family: "Rajdhani", sans-serif;
+}
+
+.nav-link {
+    font-size: large;
 }
 
 .highlight {

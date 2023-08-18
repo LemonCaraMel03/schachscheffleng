@@ -2,31 +2,34 @@
 
 
 /**
- * Präziseier 
- *      en Titel (newsTitle), 
- *      an News Texter (news) [OPTIONAL].
+ * Präziseier fir all Tournoi
+ *      en Numm (name), 
+ *      en Start Datum (start_date),
+ *      en End Datum (end_date) [OPTIONAL],
+ *      en Umeldungs Link (umeldung_link) [OPTIONAL]
+ *      an en Link zum Information Dossier (info_link) [OPTIONAL].
  * 
  */
 
 
-/* Tournoien */
+/* Tournoi Lescht */
 const tournoien = [
     /* Tournoi 1 */
     {
-        "name":             "Tournoi 1",
-        "start_date":       "",
+        "name":             "Chess 960",
+        "start_date":       "22.07.2023",
         "end_date":         "", /* [OPTIONAL] */
         "umeldung_link":    "", /* [OPTIONAL] */
-        "results_link":     "https://drive.google.com/drive/folders/1VqmC2PkiU_SPSs3dTENc_sReO0Ivoij1?usp=drive_link"  /* [OPTIONAL] */
+        "results_link":     "https://drive.google.com/drive/folders/1Y8uemkfeEpAVzdyIFVJ_rxbWDt_ag6L6?usp=drive_link"  /* [OPTIONAL] */
     },
 
     /* Tournoi 2 */
     {
-        "name":             "Tournoi 2",
-        "start_date":       "",
-        "end_date":         "", /* [OPTIONAL] */
+        "name":             "Offene Merziger Stadtmeisterschaften im Schnellschach",
+        "start_date":       "13.08.2023",
+        "end_date":         "13.08.2023", /* [OPTIONAL] */
         "umeldung_link":    "", /* [OPTIONAL] */
-        "results_link":     ""  /* [OPTIONAL] */
+        "results_link":     "https://drive.google.com/drive/folders/1EDimE0Rex8kRrunc37xFaDPXdwhsfRek?usp=drive_link"  /* [OPTIONAL] */
     },
 
     /* Tournoi 3 */
@@ -35,7 +38,7 @@ const tournoien = [
         "start_date":       "",
         "end_date":         "", /* [OPTIONAL] */
         "umeldung_link":    "", /* [OPTIONAL] */
-        "results_link":     ""  /* [OPTIONAL] */
+        "info_link":     ""  /* [OPTIONAL] */
     },
 
     /* Tournoi 4 */
@@ -44,7 +47,7 @@ const tournoien = [
         "start_date":       "",
         "end_date":         "", /* [OPTIONAL] */
         "umeldung_link":    "", /* [OPTIONAL] */
-        "results_link":     ""  /* [OPTIONAL] */
+        "info_link":     ""  /* [OPTIONAL] */
     },
 
     /* Tournoi 5 */
@@ -53,7 +56,7 @@ const tournoien = [
         "start_date":       "",
         "end_date":         "", /* [OPTIONAL] */
         "umeldung_link":    "", /* [OPTIONAL] */
-        "results_link":     ""  /* [OPTIONAL] */
+        "info_link":     ""  /* [OPTIONAL] */
     },
 
     /* Tournoi 6 */
@@ -62,7 +65,7 @@ const tournoien = [
         "start_date":       "",
         "end_date":         "", /* [OPTIONAL] */
         "umeldung_link":    "", /* [OPTIONAL] */
-        "results_link":     ""  /* [OPTIONAL] */
+        "info_link":     ""  /* [OPTIONAL] */
     },
 
     /* Tournoi 7 */
@@ -71,7 +74,7 @@ const tournoien = [
         "start_date":       "",
         "end_date":         "", /* [OPTIONAL] */
         "umeldung_link":    "", /* [OPTIONAL] */
-        "results_link":     ""  /* [OPTIONAL] */
+        "info_link":     ""  /* [OPTIONAL] */
     },
 
     /* Tournoi 8 */
@@ -80,7 +83,7 @@ const tournoien = [
         "start_date":       "",
         "end_date":         "", /* [OPTIONAL] */
         "umeldung_link":    "", /* [OPTIONAL] */
-        "results_link":     ""  /* [OPTIONAL] */
+        "info_link":     ""  /* [OPTIONAL] */
     }
 
 ];
@@ -124,11 +127,11 @@ function update_tournoien() {
                     
                     <div class="d-flex flex-column flex-sm-row justify-content-sm-end mt-3">
                         <a class="btn btn-light me-sm-3`
-            if (t["results_link"] === "") {
+            if (t["info_link"] === "") {
                 tournoi_content += " disabled"
             }
 
-            tournoi_content +=`" href="` + t["results_link"] + `" target="_blank">Méi Informatiounen</a>
+            tournoi_content +=`" href="` + t["info_link"] + `" target="_blank"  style="min-width: 165px;">Méi Informatiounen</a>
                         <a class="btn btn-danger me-sm-5`
                         
             if (t["umeldung_link"] === "") {

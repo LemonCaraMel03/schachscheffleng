@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Championnat</title>
+    <title>Chess Open</title>
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,7 +27,7 @@
 </head>
 
 
-<body onload="update_news_bar(), update_championnat_info(), update_championnat_teams()">
+<body onload="update_news_bar(), update_chessopen_info()">
 
     <!-- News Bar -->
     <div  id="news-bar" style="display: none;">
@@ -51,22 +51,22 @@
 
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="championnat.html"><img class="border border-1" src="img/languages/lu.png" width="25" height="15" alt="Lëtzebuergesch"></a>
+                        <a class="nav-link" href="chessopen.html"><img class="border border-1" src="img/languages/lu.png" width="25" height="15" alt="Lëtzebuergesch"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="languages/FR/championnat.html"><img class="border border-1" src="img/languages/fr.png" width="25" height="15" alt="Français"></a>
+                        <a class="nav-link" href="languages/FR/chessopen.html"><img class="border border-1" src="img/languages/fr.png" width="25" height="15" alt="Français"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="languages/DE/championnat.html"><img class="border border-1" src="img/languages/de.png" width="25" height="15" alt="Deutsch"></a>
+                        <a class="nav-link" href="languages/DE/chessopen.html"><img class="border border-1" src="img/languages/de.png" width="25" height="15" alt="Deutsch"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="languages/EN/championnat.html"><img class="border border-1" src="img/languages/en.png" width="25" height="15" alt="English"></a>
+                        <a class="nav-link" href="languages/EN/chessopen.html"><img class="border border-1" src="img/languages/en.png" width="25" height="15" alt="English"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="languages/PT/championnat.html"><img class="border border-1" src="img/languages/pt.png" width="25" height="15s" alt="Português"></a>
+                        <a class="nav-link" href="languages/PT/chessopen.html"><img class="border border-1" src="img/languages/pt.png" width="25" height="15s" alt="Português"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="languages/CH/championnat.html"><img class="border border-1" src="img/languages/ch.png" width="25" height="15s" alt="中国人"></a>
+                        <a class="nav-link" href="languages/CH/chessopen.html"><img class="border border-1" src="img/languages/ch.png" width="25" height="15s" alt="中国人"></a>
                     </li>
                 </ul>
                 
@@ -88,19 +88,19 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="languages">
                             <li>
-                                <a class="nav-link" href="languages/FR/championnat.html"><img class="border border-1 ms-2" src="img/languages/fr.png" width="25" height="15" alt="Français">Français</a>
+                                <a class="nav-link" href="languages/FR/chessopen.html"><img class="border border-1 ms-2" src="img/languages/fr.png" width="25" height="15" alt="Français">Français</a>
                             </li>
                             <li>
-                                <a class="nav-link" href="languages/DE/championnat.html"><img class="border border-1 ms-2" src="img/languages/de.png" width="25" height="15" alt="Deutsch">Deutsch</a>
+                                <a class="nav-link" href="languages/DE/chessopen.html"><img class="border border-1 ms-2" src="img/languages/de.png" width="25" height="15" alt="Deutsch">Deutsch</a>
                             </li>
                             <li>
-                                <a class="nav-link" href="languages/EN/championnat.html"><img class="border border-1 ms-2" src="img/languages/en.png" width="25" height="15" alt="English">English</a>
+                                <a class="nav-link" href="languages/EN/chessopen.html"><img class="border border-1 ms-2" src="img/languages/en.png" width="25" height="15" alt="English">English</a>
                             </li>
                             <li>
-                                <a class="nav-link" href="languages/PT/championnat.html"><img class="border border-1 ms-2" src="img/languages/pt.png" width="25" height="15s" alt="Português">Português</a>
+                                <a class="nav-link" href="languages/PT/chessopen.html"><img class="border border-1 ms-2" src="img/languages/pt.png" width="25" height="15s" alt="Português">Português</a>
                             </li>
                             <li>
-                                <a class="nav-link" href="languages/CH/championnat.html"><img class="border border-1 ms-2" src="img/languages/ch.png" width="25" height="15s" alt="中国人">中国人</a>
+                                <a class="nav-link" href="languages/CH/chessopen.html"><img class="border border-1 ms-2" src="img/languages/ch.png" width="25" height="15s" alt="中国人">中国人</a>
                             </li>
                         </ul>
                     </div>
@@ -113,9 +113,9 @@
                         <div class="navbar-nav d-xl-flex" style="width: 100%;">
                             <a class="nav-link" href="index.html">Home</a>
                             <a class="nav-link" href="club.html">De Club</a>
-                            <a class="nav-link active" aria-current="page" href="championnat.html">Championnat</a>
+                            <a class="nav-link" href="championnat.html">Championnat</a>
                             <a class="nav-link" href="lastsaturday.html">Last Saturday</a>
-                            <a class="nav-link" href="chessopen.html">Chess Open</a>
+                            <a class="nav-link active" aria-current="page" href="chessopen.html">Chess Open</a>
                             <a class="nav-link" href="calendar.html">Spillkalenner</a>
                             <a class="nav-link" href="contact.html">Kontakt</a>
                             
@@ -145,39 +145,37 @@
     <div class="container py-4 py-md-5">
 
         <div class="row">
-            <h1 class="display-3">Championnat 2023/2024</h1>
+            <h1 class="display-3">Chess Open "De Buggi" 2023/2024</h1>
         
             <div class="col-lg-7 mb-4 mb-lg-0 d-flex flex-column">
+                <div class="row g-2 g-lg-4 mb-3">
+                    <div class="col-md-7 col-xl-6 d-flex flex-column">
+        
+                        <p class="fw-bold">
+                            Chess Open "De Buggi" ass en Schach Turnéier.
+                        </p>
 
-                <!-- Teams -->
-                <h1>Teams</h1>
-                <div class="row g-1 mb-3">
-
-                    <div class="col-6 d-flex flex-column">
-                        <a id="team-1" class="btn btn-info fw-bold" href="https://drive.google.com/drive/folders/1M91Xc2DbcyPvyKXGHM8wj4kihSJq_Hfd?usp=drive_link" target="_blank">TEAM 1</a>
-                        <a id="team-2" class="btn btn-info fw-bold" href="https://drive.google.com/drive/folders/1K7xF7gJmbbKfKVx_UwZULAdbux_VV7Py?usp=drive_link" target="_blank">TEAM 2</a>
-                        <a id="team-3" class="btn btn-info fw-bold" href="https://drive.google.com/drive/folders/1WDMD5k9Dpa-ZyvOIyf-RY4cDseu-kdXC?usp=drive_link" target="_blank">TEAM 3</a>
-                        <a id="team-4" class="btn btn-info fw-bold" href="https://drive.google.com/drive/folders/1CzeIKwgls23VlMkXMP0NE3-QH_zIsaSU?usp=drive_link" target="_blank">TEAM 4</a>
+                        <div class="d-flex flex-column flex-md-row mt-auto">
+                            <a id="info" class="btn btn-primary flex-fill" href="" target="_blank">Méi Informatiounen</a>
+                            <a id="umeldung" class="btn btn-danger flex-fill" href="" target="_blank">Umeldung</a>  
+                        </div>
+                        
                     </div>
-
-                    <div class="col-6 d-flex flex-column">
-                        <a id="team-5" class="btn btn-info fw-bold" href="https://drive.google.com/drive/folders/1fg4hGKw-h9EB5T6Rr8dht_Qt6jFQWD8i?usp=drive_link" target="_blank">TEAM 5</a>
-                        <a id="team-6" class="btn btn-info fw-bold" href="https://drive.google.com/drive/folders/1f3gY5Y_yU0ZGWb1_IYvc78X3WPjL9Xua?usp=drive_link" target="_blank">TEAM 6</a>
-                        <a id="team-7" class="btn btn-info fw-bold" href="https://drive.google.com/drive/folders/11f1XT6FehlxWTcCiDFktLTf1JZYor0S5?usp=drive_link" target="_blank">TEAM 7</a>
-                        <a id="team-8" class="btn btn-info fw-bold" href="https://drive.google.com/drive/folders/1boYXeGZifY0H7FswXG6b4VWrQA2glMw8?usp=drive_link" target="_blank">TEAM 8</a>
+        
+                    <div class="col-md-5 col-xl-6">
+                        <a href="https://www.de-buggi.lu/" target="_blank">
+                            <img src="img/sponsors/DeBuggiLogo.png" width="100%">
+                        </a>
                     </div>
-
+        
                 </div>
 
-                <hr class="mb-4">
+                <hr class="d-none d-md-block mb-4">
+
                 
-                <a class="btn btn-danger fw-bold" href="https://www.flde.lu/resultats/" style="width: 100%; font-size: 1.5rem;" target="_blank">
-                    <i class="fa-solid fa-circle-right"></i>
-                    FLDE Resultater
-                </a>
 
                 <!-- Fotoen -->
-                <div class="col-xl-10 mt-auto d-none d-lg-block">
+                <div class="col-xl-10 mt-auto d-none d-lg-block mt-2">
                     <h1>Fotoen</h1>
     
                     <div class="row g-5">
@@ -213,91 +211,63 @@
             <!-- Rounds -->
             <div class="col-lg-5">
 
-                <div class="row g-2 g-md-4">
-                    <div class="col-12 col-md-6 col-lg-12">
-                        <div class="highlight-box highlight-box-tight mb-3">
-                            <h2>Rondes Préliminaires</h2>
+                <div class="highlight-box highlight-box-tight">
+                    <h2>Datumer</h2>
                     
-                            <div class="white-highlight-box link-box highlight-box-tight mb-3 d-flex" style="position: relative;">
-                                <h4 class="mb-0 me-3">01</h4>
-                                <div class="vr me-3"></div>
-                                <h5 class="mb-0">24. September 2023</h5>
-                                <a id="championnat-1" class="stretched-link" target="_blank" href="#"></a>
-                            </div>
-                
-                            <div class="white-highlight-box link-box highlight-box-tight mb-3 d-flex" style="position: relative;">
-                                <h4 class="mb-0 me-3">02</h4>
-                                <div class="vr me-3"></div>
-                                <h5 class="mb-0">15. Oktober 2023</h5>
-                                <a id="championnat-2" class="stretched-link" target="_blank" href="#"></a>
-                            </div>
+                    <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
+                        <h4 class="mb-0 me-3">01</h4>
+                        <div class="vr me-3"></div>
+                        <h5 class="mb-0">23. September 2023</h5>
+                    </div>
         
-                            <div class="white-highlight-box link-box highlight-box-tight mb-3 d-flex" style="position: relative;">
-                                <h4 class="mb-0 me-3">03</h4>
-                                <div class="vr me-3"></div>
-                                <h5 class="mb-0">12. November 2023</h5>
-                                <a id="championnat-3" class="stretched-link" target="_blank" href="#"></a>
-                            </div>
-        
-                            <div class="white-highlight-box link-box highlight-box-tight mb-3 d-flex" style="position: relative;">
-                                <h4 class="mb-0 me-3">04</h4>
-                                <div class="vr me-3"></div>
-                                <h5 class="mb-0">26. November 2023</h5>
-                                <a id="championnat-4" class="stretched-link" target="_blank" href="#"></a>
-                            </div>
-        
-                            <div class="white-highlight-box link-box highlight-box-tight mb-3 d-flex" style="position: relative;">
-                                <h4 class="mb-0 me-3">05</h4>
-                                <div class="vr me-3"></div>
-                                <h5 class="mb-0">10. Dezember 2023</h5>
-                                <a id="championnat-5" class="stretched-link" target="_blank" href="#"></a>
-                            </div>
-        
-                            <div class="white-highlight-box link-box highlight-box-tight mb-3 d-flex" style="position: relative;">
-                                <h4 class="mb-0 me-3">06</h4>
-                                <div class="vr me-3"></div>
-                                <h5 class="mb-0">14. Januar 2024</h5>
-                                <a id="championnat-6" class="stretched-link" target="_blank" href="#"></a>
-                            </div>
-        
-                            <div class="white-highlight-box link-box highlight-box-tight mb-3 d-flex" style="position: relative;">
-                                <h4 class="mb-0 me-3">07</h4>
-                                <div class="vr me-3"></div>
-                                <h5 class="mb-0">28. Januar 2024</h5>
-                                <a id="championnat-7" class="stretched-link" target="_blank" href="#"></a>
-                            </div>
-                
-                        </div>
+                    <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
+                        <h4 class="mb-0 me-3">02</h4>
+                        <div class="vr me-3"></div>
+                        <h5 class="mb-0">14. Oktober 2023</h5>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-12">
-                        <div class="highlight-box highlight-box-tight">
-                            <h2>Rondes Finales</h2>
-                    
-                            <div class="white-highlight-box link-box highlight-box-tight mb-3 d-flex" style="position: relative;">
-                                <h4 class="mb-0 me-3">08</h4>
-                                <div class="vr me-3"></div>
-                                <h5 class="mb-0">25. Febuar 2024</h5>
-                                <a id="championnat-8" class="stretched-link" target="_blank" href="#"></a>
-                            </div>
-        
-                            <div class="white-highlight-box link-box highlight-box-tight mb-3 d-flex" style="position: relative;">
-                                <h4 class="mb-0 me-3">09</h4>
-                                <div class="vr me-3"></div>
-                                <h5 class="mb-0">10. März 2024</h5>
-                                <a id="championnat-9" class="stretched-link" target="_blank" href="#"></a>
-                            </div>
-        
-                            <div class="white-highlight-box link-box highlight-box-tight mb-3 d-flex" style="position: relative;">
-                                <h4 class="mb-0 me-3">10</h4>
-                                <div class="vr me-3"></div>
-                                <h5 class="mb-0">24. März 2024</h5>
-                                <a id="championnat-10" class="stretched-link" target="_blank" href="#"></a>
-                            </div>
-                
-                        </div>
+                    <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
+                        <h4 class="mb-0 me-3">03</h4>
+                        <div class="vr me-3"></div>
+                        <h5 class="mb-0">25. November 2023</h5>
                     </div>
 
+                    <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
+                        <h4 class="mb-0 me-3">04</h4>
+                        <div class="vr me-3"></div>
+                        <h5 class="mb-0">30. Dezember 2023</h5>
+                    </div>
+
+                    <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
+                        <h4 class="mb-0 me-3">05</h4>
+                        <div class="vr me-3"></div>
+                        <h5 class="mb-0">27. Januar 2024</h5>
+                    </div>
+
+                    <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
+                        <h4 class="mb-0 me-3">06</h4>
+                        <div class="vr me-3"></div>
+                        <h5 class="mb-0">24. Febuar 2024</h5>
+                    </div>
+
+                    <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
+                        <h4 class="mb-0 me-3">07</h4>
+                        <div class="vr me-3"></div>
+                        <h5 class="mb-0">23. März 2024</h5>
+                    </div>
+
+                    <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
+                        <h4 class="mb-0 me-3">08</h4>
+                        <div class="vr me-3"></div>
+                        <h5 class="mb-0">27. April 2024</h5>
+                    </div>
+
+                    <div class="white-highlight-box highlight-box-tight mb-3 d-flex">
+                        <h4 class="mb-0 me-3">09</h4>
+                        <div class="vr me-3"></div>
+                        <h5 class="mb-0">25. Mai 2024</h5>
+                    </div>
+        
                 </div>
 
                 <!-- Fotoen -->
@@ -398,8 +368,7 @@
 
     <!-- Internal Scripts -->
     <script src="js/news.js"></script>
-    <script src="js/championnat.js"></script>
-    <script src="js/championnat-teams.js"></script>
+    <script src="js/chessOpen.js"></script>
     
 
 </body>
