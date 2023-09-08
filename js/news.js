@@ -10,7 +10,7 @@
 
 
 /* News Titel (red button) */
-var newsTitle = "Sign up for our Chess Open 23/24";
+var newsTitle = "Sign up for our Chess Open  DE BUGGI 23/24";
 var newsLink = "chessopen.html";
 
 
@@ -19,7 +19,7 @@ const news = [
     /*News Text 1: */   "Found a bug? - Contact us at contact@schachscheffleng.lu",
     /*News Text 2: */   "New tournaments : Last Saturday U8/U12 : 16/09/2023",
     /*News Text 3: */   "Last Saturday U14/U20 : 23/09/2023",
-    /*News Text 4: */   "Chess Open 2023/24 : 30/09/2023"
+    /*News Text 4: */   "Chess Open DE BUGGI 2023/24 : 30/09/2023"
 ];
 
 

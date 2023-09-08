@@ -20,7 +20,7 @@ const tournoien = [
         "start_date":       "22.07.2023",
         "end_date":         "", /* [OPTIONAL] */
         "umeldung_link":    "", /* [OPTIONAL] */
-        "results_link":     "https://drive.google.com/drive/folders/1Y8uemkfeEpAVzdyIFVJ_rxbWDt_ag6L6?usp=drive_link"  /* [OPTIONAL] */
+        "info_link":     "https://drive.google.com/drive/folders/1Y8uemkfeEpAVzdyIFVJ_rxbWDt_ag6L6?usp=drive_link"  /* [OPTIONAL] */
     },
 
     /* Tournoi 2 */
@@ -29,7 +29,7 @@ const tournoien = [
         "start_date":       "13.08.2023",
         "end_date":         "13.08.2023", /* [OPTIONAL] */
         "umeldung_link":    "", /* [OPTIONAL] */
-        "results_link":     "https://drive.google.com/drive/folders/1EDimE0Rex8kRrunc37xFaDPXdwhsfRek?usp=drive_link"  /* [OPTIONAL] */
+        "info_link":     "https://drive.google.com/drive/folders/1EDimE0Rex8kRrunc37xFaDPXdwhsfRek?usp=drive_link"  /* [OPTIONAL] */
     },
 
     /* Tournoi 3 */
@@ -122,7 +122,7 @@ function update_tournoien() {
                         </div>
 
                         <div class="vr me-3 d-none d-sm-block"></div>
-                        <h1 class="mb-0">` + t["name"] + `</h1>
+                        <h2 class="mb-0">` + t["name"] + `</h2>
                     </div>
                     
                     <div class="d-flex flex-column flex-sm-row justify-content-sm-end mt-3">
